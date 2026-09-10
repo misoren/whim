@@ -1,97 +1,122 @@
-# Obsidian Advanced Theme Template
+Welcome to Whim!
+# Overview
+## Philosophy
+- **For people who love colors**
+	- Pick an accent color -> get a colorful theme with your chosen accent color as the primary color and a contrasting color for accents.
+		- If you pick a low-saturation or dark color, the resulting palette won't be THAT colorful. It's up to you!
+	- This doesn't use any specific, pre-documented way to choose colors that go well with the chosen accent color. I just eyeballed what looked good enough to me.
+		- One optional snippet shifts the hues in the opposite direction from the accent color as the default theme approach.
+		- Another optional snippet shifts the hues less.
+- **For people who love doohickeys**
+- **Not minimalistic**
+	- This theme was def not designed with minimalism in mind. You could *choose* to use it in a somewhat ~minimal fashion...but then why wouldn't you just use a different theme?
+- **Large (~15mb last I checked)**
+- **Supports, dare I say, whimsy**
+	- Make your notes as eye-pleasing or as eye-hurting as you want
+	- Maybe evokes scrapbooking energy
+	- Or something like updating your MySpace/Neopets/Gaia Online profile
+	- Make your notes look wildly different from each other if you desire
+	- Core aesthetic is mildly inspired by art nouveau and woodblock prints, but you can do some more cyber/neon-y type stuff too
+- **Dark mode first**
+	- There's a light mode, but YMMV with that fellow. It's far from fully tested, and some cssclasses, snippets, etc., will not play nice with light mode.
+- **Desktop first**
+	- I use Obsidian mobile regularly, but this theme was not built for mobile use in particular, and mobile use hasn't been tested much yet. In my experience, this theme is *usable* on mobile, but many of its features do not work properly.
+## Features
+- **Subtle(?) gradient animation with a circley patterned background**
+	- It's calming. Probably.
+	- Animation *can* eat up some resources, so there's a no-anim snippet provided to disable those.
+- **MANY CSS classes**
+	- Like, so many. This theme aspires to have a whole taxonomy for you to apply at will to your cssclasses note property
+	- You'll find:
+		- Note backgrounds
+			- Gradients, blur, patterns, a selection of SVG illustrations
+		- Background animations
+		- Borders
+		- Variety of heading fonts
+		- Horizontal rule styles
+		- Glowiness
+		- Frame shadows
+		- Vignettes?
+		- Scanlines?
+		- Color filters
+		- Several blend modes
+			- Most of which are functionally useless!
+			- But maybe you'll find a use!
+		- Spinning chicken* mode
+			- * only spins the note for even cooking, no chickens harmed or rotated
+- **New callout types**
+	- 20 new "content" callout types (like "place", "chef", and "ugh") and 14ish new "style" callout types (like "rainbow" and a selection of SVG illustrations)
+- **Some callout property things**
+	- Just drop the extra property strings into the callout type bit, like turn "[!note]" into "[!note.readout.white_text]" to apply the mysterious properties "readout" and "white_text"
+- **More checkbox states than you'll be likely to use**
+	- There's over 80, including things like a cat, a UFO, and a donut.
+- **Does not use Style Settings**
+	- As a personal user, I love Style Settings. But this theme was also made with plugins-off users in mind, e.g., me at work. I might add Style Settings support in the future? But if I do update this theme in the future, I hope to do so with a vanilla Obsidian experience in mind first.
+- OPTIONAL: **Several snippets available for this theme**
+	- Most won't work with other themes, but some would!
+- IN PROGRESS/PARTIAL: **Mobile support**
+	- It's not totally dysfunctional on mobile, but it definitely has some issues, and all the stuff looks better on desktop anyway probably.
+- DOCUMENTATION: **There's an examples folder.**
+- OTHER STUFF
+	- Embedded notes are borderless and titleless
+	- Bold, italics, strikethrough, and horizontal are colorful
+	- Different heading colors using the dynamic palette
+- **No AI involvement**
+	- I crafted this CSS the old-fashioned way: copying and pasting from other sources and tweaking with my own two hands. 
+	- The themes Minimal, Nebulux, and Fancy-a-story were useful points of reference/education/information.
 
-Press **Use this template** to use this template for your Obsidian theme! This template will always be up-to-date with the latest Obsidian public release. 
+❗❗❗❗***ADD RAINBOW IMAGE***
+## Themes I like that you might like
+I made Whim for my own use, but if I didn't, I'd be using one of these:
+- Fancy-a-story
+- Retroma
+- Underwater
+- Ultra Lobster
+- cranky goblin
+- Nebulux
 
-> [!note]
-> Are you interested in something more basic? Check out the [Obsidian Sample Theme](https://github.com/obsidianmd/obsidian-sample-theme).
+## Improbable Future Stuff
+> or: what this theme does not do atm
+- Improve mobile support
+- Improve read mode
+- *MAYBE*: Improve light mode
+	- Like updating "light" and "dark" in the note and callout styles to actually mean what those words mean
+	- Like adding lighter versions of the BG illustrations and darker versions of the callout stamps
+- *MAYBE*: Style Settings support
+- *VERY MAYBE*: Canvas stuff
+- *VERY MAYBE*: Graph stuff?
+- *VERY MAYBE*: Support for some popular plugins, if needed
+- *EXTREMELY MAYBE*: More callout styles and note cssclasses
+- *VERY MAYBE*: More snippets
 
-## Get started
+Feel free to send pull requests. I think. Maybe.
 
-- [Guides for Obsidian Theme Designers](https://publish.obsidian.md/hub/04+-+Guides%2C+Workflows%2C+%26+Courses/for+Theme+Designers)
-- [Theme Design Utilities Plugin](https://github.com/chrisgrieser/obsidian-theme-design-utilities)
-- [Example vault with a huge collection of test notes](https://github.com/obsidian-community/theme-dev-vault)
-- For a deeper walkthrough, see the official [Build a theme](https://docs.obsidian.md/Themes/App+themes/Build+a+theme) tutorial.
+# Extended Feature Info
+> this section is very long
 
-### Quick start
+## Callouts
+### Vanilla
+### Custom
+### Callout Styling
+#### Callout Backgrounds
+#### Other
 
-Once you have the repository locally on your computer, there are a couple of placeholder fields you'll need to fill in.
+## Checkboxes
 
-1. Inside the `manifest.json` file, update the placeholder fields to describe your theme. For example:
+## cssclasses
+### Note Backgrounds
+#### Basic
+#### Images
+#### Colors
+#### Animations
+### Filters
+### Horizontal Rules
+### Borders
+### Masks
+### Other
 
-   ```json
-   {
-     "name": "Moonstone",
-     "version": "1.0.0",
-     "minAppVersion": "1.13.0",
-     "author": "Your Name",
-     "fundingUrl": "https://ko-fi.com/yourname",
-     "authorUrl": "https://yoururl"
-   }
-   ```
+## Snippets
+### Utility
+### App Backgrounds
+### Other
 
-   - **name** is the name of your theme.
-   - **version** is the version of your theme.
-   - **minAppVersion** should only be changed as you add new CSS from Obsidian installer updates.
-   - **author** is your name.
-   - **fundingUrl** is an optional link where users can support your work, for example a Ko-fi page.
-   - **authorUrl** is an optional link to your website or profile.
-
-After you have those fields configured, all that's left to do is add your styles! All of your CSS needs to be inside the file `theme.css` as a part of your [release](#releasing-versions).
-
-## Preparing your theme for the community directory
-
-Before you can submit your theme to the [community directory](https://community.obsidian.md/), there are a few things you'll need to prepare.
-
-Review the [Theme guidelines](https://docs.obsidian.md/Themes/App+themes/Theme+guidelines) for best practices, such as using CSS variables, avoiding `!important`, and keeping assets local. Themes that don't follow them are more likely to break on future Obsidian versions or get flagged during review.
-
-This template already includes [`stylelint-config-obsidianmd`](https://github.com/obsidianmd/stylelint-config), which enforces the same CSS rules used during theme review. Run `npm install` once, then `npm run lint` to check `theme.css` against them. This also runs automatically on every pull request via the [lint workflow](.github/workflows/lint.yml).
-
-### Add a screenshot thumbnail
-
-Inside the repository, include a screenshot thumbnail of your theme. We recommend storing it in a `screenshots` folder at the root of your repository, for example `screenshots/screenshot.png`. This image will be used for the small preview in the theme list.
-
-Your screenshot file should be `16:9` aspect ratio. The recommended size is 512x288.
-
-### Releasing versions
-
-Themes support [GitHub Releases](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository), introduced in v0.16 of Obsidian. This lets you specify which versions of your theme are compatible with which versions of Obsidian.
-
-This repository already includes a [GitHub Actions workflow](.github/workflows/release.yml) that automates this. Pushing a tag matching your `manifest.json` version creates a draft release with `manifest.json` and `theme.css` attached, which you can then review and publish. See [Release your theme with GitHub Actions](https://docs.obsidian.md/Themes/App+themes/Release+your+theme+with+GitHub+Actions) for the full walkthrough.
-
-Before you push a tag, make sure `versions.json` is up to date. This file maps your theme's version to the minimum Obsidian version it's compatible with:
-
-```json
-{
-  "1.0.0": "1.13.0"
-}
-```
-
-For the initial release of your theme, you shouldn't need to make any changes to this file. When you release a new version, add an entry for it:
-
-```json
-{
-  "1.0.1": "1.13.0",
-  "1.0.0": "1.13.0"
-}
-```
-
-The "key" is your theme's version, and the "value" is the minimum version of Obsidian that version is compatible with. If a new version of your theme only works with an Insider build of Obsidian, set this value accordingly, so users on older versions of Obsidian won't be prompted to update to a version that won't work for them.
-
-## Submit your theme for review
-
-To have your theme included in the Theme Gallery, you'll submit it through the Obsidian Community directory. Make sure you've [added a screenshot](#add-a-screenshot-thumbnail) and [published a release](#releasing-versions) first, since the submission form needs both. The community hub also has an illustrated guide: [How to add your theme to the community theme store](https://publish.obsidian.md/hub/04+-+Guides%2C+Workflows%2C+%26+Courses/Guides/How+to+add+your+theme+to+the+community+theme+store).
-
-You'll also need a `LICENSE` file in the root of your repository, which isn't included in this template. See [Choose a License](https://choosealicense.com/) if you're not sure which one to use. See the official [Submit your theme](https://docs.obsidian.md/Themes/App+themes/Submit+your+theme) guide for more detail.
-
-1. Go to [community.obsidian.md](https://community.obsidian.md) and sign in with your Obsidian account.
-2. Link your GitHub account to your profile. This lets the directory verify that you own the repository you're submitting.
-3. In the sidebar, select **Themes**, then select **New theme**.
-4. Fill out the submission form:
-   - **GitHub repository URL** is your repository's URL, for example `https://github.com/your-username/your-repo-name`.
-   - **Owner** is who will own and maintain this entry, and doesn't have to match the repository's GitHub owner.
-   - **Screenshot path** is the path to your screenshot, relative to the repository root, for example `screenshots/screenshot.png`.
-   - For **Supported modes**, select Dark and/or Light depending on which your theme supports.
-5. Read and agree to the [Developer Policies](https://docs.obsidian.md/Developer+policies), and confirm that you'll continue to support your theme (or remove/transfer it if you can no longer provide support).
-6. Select **Submit**.
-
-The directory processes the `manifest.json` at the HEAD of your repository's default branch, so make sure it's accurate and committed before submitting. Obsidian downloads `manifest.json` and `theme.css` from the GitHub release whose tag matches the version in your manifest, which is why a published release is required.
