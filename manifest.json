@@ -1,7 +1,7 @@
 {
 	"name": "Whim",
 	"version": "1.0.0",
-	"minAppVersion": "1.0.0",
-	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md"
+	"minAppVersion": "1.13.0",
+	"author": "misoren",
+	"authorUrl": "https://github.com/misoren/whim/"
 }
