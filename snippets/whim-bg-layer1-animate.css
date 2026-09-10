@@ -1,0 +1,5 @@
+
+.horizontal-main-container {
+    background-size: 400% 400%;
+    animation: gradient 60s ease infinite;
+}

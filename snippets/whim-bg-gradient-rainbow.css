@@ -1,0 +1,11 @@
+
+.theme-dark .workspace {
+    backdrop-filter: brightness(0.35);
+}
+
+.horizontal-main-container {
+    background: var(--nbg-whim-linear-rainbow);
+    background-attachment: fixed;
+    background-size: 400% 400%;
+    animation: gradient 60s ease infinite;
+}

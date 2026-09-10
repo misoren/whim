@@ -1,0 +1,6 @@
+/* image from wikiimages on pixabay */
+.theme-dark .workspace {
+	background: var(--gdj-artnouveau3);
+	background-size: auto 100%;
+	animation: none;
+}

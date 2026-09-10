@@ -1,0 +1,4 @@
+
+.theme-light .workspace, .theme-dark .workspace {
+    animation: zoom 360s ease infinite;
+}

@@ -1,0 +1,7 @@
+
+.horizontal-main-container {
+    background: var(--nbg-whim-linear-alt);
+    background-attachment: fixed;
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+}

@@ -1,0 +1,13 @@
+
+.body, .theme-dark, .theme-light {
+	--weakest-shift-hue: -10;
+	--weakest-shift-hue-deg: -10deg;
+	--weak-shift-hue: -20;
+	--weak-shift-hue-deg: -20deg;
+	--shift-hue: -30;
+	--shift-hue-deg: -30deg;
+	--strong-shift-hue: -50;
+	--strong-shift-hue-deg: -50deg;
+	--strongest-shift-hue: -70;
+	--strongest-shift-hue-deg: -70deg;
+}
