@@ -18,7 +18,7 @@ TODO:
 - get sources of image added to css; search browser history. Or find new images and source them properly.
 - Ingest more illustrations
 - Update more BGs to respond to the draw and color note classes
-
+- Update and reorganize snippets
 
 */
 
@@ -33,6 +33,16 @@ body {
     ##############################################################
     */
 
+	--weakest-shift-hue: -20;
+	--weakest-shift-hue-deg: -20deg;
+	--weak-shift-hue: -50;
+	--weak-shift-hue-deg: -50deg;
+	--shift-hue: -100;
+	--shift-hue-deg: -100deg;
+	--strong-shift-hue: -150;
+	--strong-shift-hue-deg: -150deg;
+	--strongest-shift-hue: -200;
+	--strongest-shift-hue-deg: -200deg;
 
 
     /*
