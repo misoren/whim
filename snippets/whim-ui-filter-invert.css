@@ -1,0 +1,9 @@
+
+.workspace {
+    filter: invert(100%);
+    backdrop-filter: invert(100%);
+}
+
+img {
+    filter: invert(100%);
+}

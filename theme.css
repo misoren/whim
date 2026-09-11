@@ -14,16 +14,15 @@
 
 /* 
 TODO:
-- [/] ADD THE PIXABAY IDS TO THOSE SVGS
 - [ ] get sources of image added to css where needed; search browser history. Or find new images and source them properly.
-- [ ] Ingest more illustrations + make a few white instead of black, for some light mode compatibility? 
-    - ...is there any less manual way for me to make white versions + without adding even more bulk to file size?
-- [ ] Update more BGs to respond to the draw and color note classes
+- [/] Ingest more illustrations
+- [ ] Update more diy/pattern BGs to respond to the draw and color note classes
 - [x] Update and reorganize snippets
 - [/] Finish README, e.g., extended feature section and images
     - [ ] Big-ish image of several screenshots
         - [ ] various colors, with all the text styling colors
         - [ ] "dashboard" view with multiple panes and notes of different styles, colors, filters
+- [ ] Add examples to the folder
 - [ ] Add main screenshot per Obsidian theme-guide-y readme
 - [ ] Screenshots for the extended doc section
 - [ ] Update tag colors for both dark and light mode
