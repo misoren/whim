@@ -77,6 +77,7 @@ I made Whim for my own use, but if I didn't, I'd be using one of these:
 
 ## Improbable Future Stuff
 > or: what this theme does not do/do well atm
+- I may become convinced to make the scrollbars easier to see.
 - Improve mobile support
 - Improve read mode
 - *MAYBE*: Improve light mode
