@@ -14,34 +14,29 @@
 
 /* 
 TODO:
-- [/] Ingest more illustrations
-- [ ] Add more of the illustrations as snippet app BGs 
-- [ ] Add more of the illustrations as callout BGs
-- [x] Update and reorganize snippets
 - [/] Finish README, e.g., extended feature section and images
 	- [ ] "dashboard" view with multiple panes and notes of different styles, colors, filters
-	- [ ] Use the "gems" image as the one for the theme maybe?
+	- [ ] CREATE NEW VERSION and use the "gems" image as the one for the theme maybe? (need to create new 'cause I've changed the default BG gradient a little)
+	- [ ] Include a little snip of the accent color for some (all?) examples
 	- [ ] Early in the readme offer "vanilla" Whim vs "customized" whim, and add 2-3 differently customized Whims throughout -- do not use snippets
 	- [ ] Update from the README source notes
-
-- [ ] Add callout font "classes"
-
-- [x] Change prefix for note classes to include "whim" BEFORE documenting
-	- [ ] do it for snippets too...
-
-- [ ] Add snippet for 1px dividers
-- [ ] Add snippet for lower-transparency scrollbars
+	- [ ] Add note: blend-blurs are not compatible with masks or these cssclasses may behave unexpectedly with each other
 
 - [ ] Add examples to the folder
 	- [ ] Add new all-the-notes note
 
-- [x] add a "no title" note class, for hiding the title
-- [x] add a note class for hiding properties too
-
-- [x] offer 3-4 note classes for changing font in a note -- test in read mode too...
-
 - [ ] Look for other TODOs in this file
 - [ ] Then...what's left to do to actually submit to Obsidian community themes? :)
+
+## Examples
+⌛I'll be working on adding markdown examples to the examples folder.
+TODO:
+- [ ] A single note with every note class that you can drop into your vault to get the classes added to your cssclasses suggestions. Warning: this note will be painful to look at.
+- [ ] An every-checkbox note
+- [ ] An every-callout note
+- [ ] Some BG pattern + animation combo examples
+- [ ] ...*Probably others?*
+
 */
 
 body {
@@ -222,6 +217,7 @@ body {
     /* For callout BGs */
 
 	/* Lower opacity versions of SVGs for callout BGs*/
+	--closed-icon-faint: url("data:image/svg+xml;charset=utf-8,%3Csvg class='h-5 w-5' fill='white' opacity='0.15' viewBox='2 2 20 20' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22ZM16.0303 8.96967C16.3232 9.26256 16.3232 9.73744 16.0303 10.0303L11.0303 15.0303C10.7374 15.3232 10.2626 15.3232 9.96967 15.0303L7.96967 13.0303C7.67678 12.7374 7.67678 12.2626 7.96967 11.9697C8.26256 11.6768 8.73744 11.6768 9.03033 11.9697L10.5 13.4393L14.9697 8.96967C15.2626 8.67678 15.7374 8.67678 16.0303 8.96967Z' /%3E%3C/svg%3E");
 	--pen-icon-faint: url("data:image/svg+xml;charset=utf-8,%3Csvg class='h-5 w-5' fill='white' opacity='0.15' viewBox='2 2 20 20' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M11.4001 18.1612L11.4001 18.1612L18.796 10.7653C17.7894 10.3464 16.5972 9.6582 15.4697 8.53068C14.342 7.40298 13.6537 6.21058 13.2348 5.2039L5.83882 12.5999L5.83879 12.5999C5.26166 13.1771 4.97307 13.4657 4.7249 13.7838C4.43213 14.1592 4.18114 14.5653 3.97634 14.995C3.80273 15.3593 3.67368 15.7465 3.41556 16.5208L2.05445 20.6042C1.92743 20.9852 2.0266 21.4053 2.31063 21.6894C2.59466 21.9734 3.01478 22.0726 3.39584 21.9456L7.47918 20.5844C8.25351 20.3263 8.6407 20.1973 9.00498 20.0237C9.43469 19.8189 9.84082 19.5679 10.2162 19.2751C10.5343 19.0269 10.823 18.7383 11.4001 18.1612Z' /%3E%3Cpath d='M20.8482 8.71306C22.3839 7.17735 22.3839 4.68748 20.8482 3.15178C19.3125 1.61607 16.8226 1.61607 15.2869 3.15178L14.3999 4.03882C14.4121 4.0755 14.4246 4.11268 14.4377 4.15035C14.7628 5.0875 15.3763 6.31601 16.5303 7.47002C17.6843 8.62403 18.9128 9.23749 19.85 9.56262C19.8875 9.57563 19.9245 9.58817 19.961 9.60026L20.8482 8.71306Z' /%3E%3C/svg%3E");
 	--info-icon-faint: url("data:image/svg+xml;charset=utf-8,%3Csvg class='h-5 w-5' fill='white' opacity='0.15' viewBox='2 2 20 20' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22ZM12 17.75C12.4142 17.75 12.75 17.4142 12.75 17V11C12.75 10.5858 12.4142 10.25 12 10.25C11.5858 10.25 11.25 10.5858 11.25 11V17C11.25 17.4142 11.5858 17.75 12 17.75ZM12 7C12.5523 7 13 7.44772 13 8C13 8.55228 12.5523 9 12 9C11.4477 9 11 8.55228 11 8C11 7.44772 11.4477 7 12 7Z' /%3E%3C/svg%3E");
 	--question-icon-faint: url("data:image/svg+xml;charset=utf-8,%3Csvg class='h-5 w-5' fill='white' opacity='0.15' viewBox='2 2 20 20' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22ZM12 7.75C11.3787 7.75 10.875 8.25368 10.875 8.875C10.875 9.28921 10.5392 9.625 10.125 9.625C9.71079 9.625 9.375 9.28921 9.375 8.875C9.375 7.42525 10.5503 6.25 12 6.25C13.4497 6.25 14.625 7.42525 14.625 8.875C14.625 9.58584 14.3415 10.232 13.883 10.704C13.7907 10.7989 13.7027 10.8869 13.6187 10.9708C13.4029 11.1864 13.2138 11.3753 13.0479 11.5885C12.8289 11.8699 12.75 12.0768 12.75 12.25V13C12.75 13.4142 12.4142 13.75 12 13.75C11.5858 13.75 11.25 13.4142 11.25 13V12.25C11.25 11.5948 11.555 11.0644 11.8642 10.6672C12.0929 10.3733 12.3804 10.0863 12.6138 9.85346C12.6842 9.78321 12.7496 9.71789 12.807 9.65877C13.0046 9.45543 13.125 9.18004 13.125 8.875C13.125 8.25368 12.6213 7.75 12 7.75ZM12 17C12.5523 17 13 16.5523 13 16C13 15.4477 12.5523 15 12 15C11.4477 15 11 15.4477 11 16C11 16.5523 11.4477 17 12 17Z'/%3E%3C/svg%3E");
@@ -512,15 +508,15 @@ body {
 	--bgl: 15%;
 	--bgla: 10%;
 	--bgw1: hsl(calc(var(--accent-h) + 10),	var(--bgs),	calc(var(--bgl) + 3%));
-	--bgw2: hsl(calc(var(--accent-h) + 5),calc(var(--accent-s) - 10%),var(--bgl));
-	--bgw3: hsl(calc(var(--accent-h) + var(--weakest-shift-hue)),var(--bgs),calc(var(--bgl) - 3%));
+	--bgw2: hsl(calc(var(--accent-h) + 5), calc(var(--accent-s) - 10%), var(--bgl));
+	--bgw3: hsl(calc(var(--accent-h) + var(--weakest-shift-hue)), var(--bgs), calc(var(--bgl) - 3%));
 	--bgw4: hsl(calc(var(--accent-h) - 5), var(--bgs),var(--bgl));
-	--bgw5: hsl(var(--accent-h),var(--bgs),calc(var(--accent-l) - 20%));
-	--bgw1a: hsl(calc(var(--accent-h) - var(--weakest-shift-hue)),var(--bgsa),var(--bgla));
-	--bgw2a: hsl(calc(var(--accent-h) - var(--weak-shift-hue)),calc(var(--accent-s) - 10%),var(--bgla));
-	--bgw3a: hsl(calc(var(--accent-h) + var(--weakest-shift-hue)),var(--bgsa),var(--bgla));
-	--bgw4a: hsl(calc(var(--accent-h) + var(--weak-shift-hue)),	var(--bgsa),var(--bgla));
-	--bgw5a: hsl(var(--accent-h),var(--bgsa),var(--bgla));
+	--bgw5: hsl(var(--accent-h), var(--bgs), calc(var(--accent-l) - 45%));
+	--bgw1a: hsl(calc(var(--accent-h) - var(--weakest-shift-hue)), var(--bgsa), var(--bgla));
+	--bgw2a: hsl(calc(var(--accent-h) - var(--weak-shift-hue)), calc(var(--accent-s) - 10%), var(--bgla));
+	--bgw3a: hsl(calc(var(--accent-h) + var(--weakest-shift-hue)), var(--bgsa), var(--bgla));
+	--bgw4a: hsl(calc(var(--accent-h) + var(--weak-shift-hue)), 	var(--bgsa), var(--bgla));
+	--bgw5a: hsl(var(--accent-h), var(--bgsa), var(--bgla));
 
     --color-base-00: color-mix(in srgb, var(--bgw2), var(--whim2) 0%);
     --color-base-05: color-mix(in srgb, var(--bgw2), var(--whim2) 5%);
@@ -892,6 +888,7 @@ img:hover {
 ##############################################################
 ##############################################################
 */
+
 /* Illustrations */
 
 .whim-hr-woman1 {
@@ -1146,7 +1143,7 @@ body .callout[data-callout^="info"] {
 }
 body .callout[data-callout^="todo"] {
     --callout-color: var(--bcon);
-	background-image: var(--info-icon-faint);
+	background-image: var(--closed-icon-faint);
 	background-size: var(--callout-bg-stamp-size);
 	background-position: var(--callout-bg-stamp-position);
 	background-repeat: no-repeat;
@@ -1164,7 +1161,7 @@ body .callout[data-callout^="success"],
 body .callout[data-callout^="check"],
 body .callout[data-callout^="done"] {
     --callout-color: var(--color-green);
-	background-image: var(--smile-icon-faint);
+	background-image: var(--closed-icon-faint);
 	background-size: var(--callout-bg-stamp-size);
 	background-position: var(--callout-bg-stamp-position);
 	background-repeat: no-repeat;
@@ -1399,6 +1396,14 @@ body .callout[data-callout^="ugh"]  {
 	background-position: var(--callout-bg-stamp-position);
 	background-repeat: no-repeat;
 }
+body .callout[data-callout^="smile"]  {
+    --callout-icon: lucide-smile;
+    --callout-color: var(--color-green);
+	background-image: var(--smile-icon-faint);
+	background-size: var(--callout-bg-stamp-size);
+	background-position: var(--callout-bg-stamp-position);
+	background-repeat: no-repeat;
+}
 body .callout[data-callout*="rainbow"]  {
     --callout-icon: none;
 	border-style: solid;
@@ -1474,7 +1479,7 @@ body .callout[data-callout*="seamless2"]  {
 	background-position: 50% 0%;
 	background-repeat: repeat;
 }
-body .callout[data-callout*="border"]  {
+body .callout[data-callout*="svg_border"]  {
     --callout-icon: none;
 	color: var(--lw);
 	background-image: var(--gdj-border);
@@ -1570,7 +1575,7 @@ body .callout[data-callout*="compass"]  {
 	background-repeat: repeat;
 }
 
-body .callout[data-callout*="abstract"]  {
+body .callout[data-callout*="svg_abstract"]  {
     --callout-icon: none;
 	color: var(--lw);
 	background-image: var(--nraproject-abstract);
@@ -1724,6 +1729,13 @@ body .callout[data-callout*="gigantext"] {
 	font-size: 4em;
 	font-weight: 800;
 }
+body .callout[data-callout*="truly_large_text"] {
+	font-size: 10em;
+	font-weight: 800;
+}
+body .callout[data-callout*="center_text"] {
+	text-align: center;
+}
 body .callout[data-callout*="text_cut"] {
 	color: transparent;
   	background-clip: text;
@@ -1738,8 +1750,23 @@ body .callout[data-callout*="text_cut"] .callout-title {
 body .callout[data-callout*="text_cut"]:hover {
 	border: none;
 }
-body .callout[data-callout*="header_font"] {
+body .callout[data-callout*="font_header"] {
 	font-family: var(--hfont);
+}
+body .callout[data-callout*="font_faculty"] {
+	font-family: 'Faculty_Glyphic';
+}
+body .callout[data-callout*="font_specialelite"] {
+	font-family: 'Special_Elite';
+}
+body .callout[data-callout*="font_silkscreen"] {
+	font-family: 'Silkscreen';
+}
+body .callout[data-callout*="font_glassantiqua"] {
+	font-family: 'Glass_Antiqua';
+}
+body .callout[data-callout*="font_orbitron"] {
+	font-family: 'Orbitron';
 }
 
 /* Final callout styling */
@@ -2738,14 +2765,44 @@ li[data-task="`"] > p > input:checked {
 .whim-filter-mist {
 	filter: invert(10%) sepia(75%) saturate(100%) hue-rotate(225deg) brightness(110%) contrast(125%);
 }
-.whim-filter-gray {
+.whim-filter-darker {
+    filter: brightness(0.8) contrast(1.1);
+}
+.whim-filter-lighter {
+    filter: brightness(1.25) contrast(1.1);
+}
+.whim-filter-grayscale {
 	filter: grayscale(100%);
 }
 .whim-filter-sepia {
 	filter: sepia(100%);
 }
 .whim-filter-invert {
+    filter: invert(100%);
+}
+.whim-filter-invert img {
+    filter: invert(100%);
+}
+.whim-filter-invert-darker {
     filter: invert(100%) brightness(60%) contrast(200%);
+}
+.whim-filter-invert-darker img {
+    filter: invert(100%);
+}
+.whim-filter-terminal {
+	filter: invert(10%) sepia(75%) saturate(100%) hue-rotate(80deg) brightness(1.15) contrast(2);
+}
+.whim-filter-pseudo-light-mode-higher-contrast {
+    filter: invert(100%) hue-rotate(180deg) brightness(1.05) contrast(1.2);
+}
+.whim-filter-pseudo-light-mode-higher-contrast img {
+    filter: invert(100%) hue-rotate(180deg) brightness(0.95) contrast(0.8);
+}
+.whim-filter-pseudo-light-mode {
+    filter: invert(100%) hue-rotate(180deg);
+}
+.whim-filter-pseudo-light-mode img {
+    filter: invert(100%) hue-rotate(180deg);
 }
 
 .whim-filter-rotatehue {
@@ -2861,14 +2918,23 @@ li[data-task="`"] > p > input:checked {
 .whim-draw-faint {
 	--nbg-draw-transparency: 95%;
 }
+.whim-draw-more {
+	--nbg-draw-transparency: 75%;
+}
+.whim-draw-evenmore {
+	--nbg-draw-transparency: 35%;
+}
 .whim-draw-opaque {
-	--nbg-draw-transparency: 5%;
+	--nbg-draw-transparency: 1%;
 }
 .whim-color-faint {
 	--nbg-solid-transparency: 95%;
 }
 .whim-color-more {
-	--nbg-solid-transparency: 65%;
+	--nbg-solid-transparency: 75%;
+}
+.whim-color-evenmore {
+	--nbg-solid-transparency: 35%;
 }
 .whim-color-opaque {
 	--nbg-solid-transparency: 5%;
@@ -2903,6 +2969,55 @@ li[data-task="`"] > p > input:checked {
 }
 .whim-draw-black {
 	--nbg-draw-color: color-mix(in srgb, black, transparent var(--nbg-draw-transparency));
+}
+
+.whim-color-red {
+	--nbg-solid-color: color-mix(in srgb, var(--color-red), transparent var(--nbg-solid-transparency));
+}
+.whim-draw-red {
+	--nbg-draw-color: color-mix(in srgb, var(--color-red), transparent var(--nbg-draw-transparency));
+}
+.whim-color-orange {
+	--nbg-solid-color: color-mix(in srgb, var(--color-orange), transparent var(--nbg-solid-transparency));
+}
+.whim-draw-orange {
+	--nbg-draw-color: color-mix(in srgb, var(--color-orange), transparent var(--nbg-draw-transparency));
+}
+.whim-color-yellow {
+	--nbg-solid-color: color-mix(in srgb, var(--color-yellow), transparent var(--nbg-solid-transparency));
+}
+.whim-draw-yellow {
+	--nbg-draw-color: color-mix(in srgb, var(--color-yellow), transparent var(--nbg-draw-transparency));
+}
+.whim-color-green {
+	--nbg-solid-color: color-mix(in srgb, var(--color-green), transparent var(--nbg-solid-transparency));
+}
+.whim-draw-green {
+	--nbg-draw-color: color-mix(in srgb, var(--color-green), transparent var(--nbg-draw-transparency));
+}
+.whim-color-cyan {
+	--nbg-solid-color: color-mix(in srgb, var(--color-cyan), transparent var(--nbg-solid-transparency));
+}
+.whim-draw-cyan {
+	--nbg-draw-color: color-mix(in srgb, var(--color-cyan), transparent var(--nbg-draw-transparency));
+}
+.whim-color-blue {
+	--nbg-solid-color: color-mix(in srgb, var(--color-blue), transparent var(--nbg-solid-transparency));
+}
+.whim-draw-blue {
+	--nbg-draw-color: color-mix(in srgb, var(--color-blue), transparent var(--nbg-draw-transparency));
+}
+.whim-color-purple {
+	--nbg-solid-color: color-mix(in srgb, var(--color-purple), transparent var(--nbg-solid-transparency));
+}
+.whim-draw-purple {
+	--nbg-draw-color: color-mix(in srgb, var(--color-purple), transparent var(--nbg-draw-transparency));
+}
+.whim-color-pink {
+	--nbg-solid-color: color-mix(in srgb, var(--color-pink), transparent var(--nbg-solid-transparency));
+}
+.whim-draw-pink {
+	--nbg-draw-color: color-mix(in srgb, var(--color-pink), transparent var(--nbg-draw-transparency));
 }
 
 .whim-bg-solid {
