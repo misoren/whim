@@ -63,6 +63,9 @@
 	- Just drop the extra property strings into the callout type bit, like turn "[!note]" into "[!note.readout.white_text]" to apply the mysterious properties "readout" and "white_text"
 - **More checkbox states than you'll be likely to use**
 	- There's over 80, including things like a cat, a UFO, and a donut.
+---
+![checkboxes](images/checkboxes.png)
+---
 - **Does not use Style Settings** (or any other plugins)
 	- As a personal user, I love Style Settings. But this theme was also made with plugins-off users in mind, e.g., me at work. I might add Style Settings support in the future? But if I do update this theme in the future, I hope to do so with a vanilla Obsidian experience in mind first.
 - *OPTIONAL*: **Several snippets available for this theme**
