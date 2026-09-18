@@ -1,6 +1,12 @@
 # Welcome to Whim!
 
 ![basic whim](screenshots/whim.png)
+> Vanilla Whim
+
+![basic whim](screenshots/whim2.png)
+![basic whim](screenshots/whim3.png)
+![basic whim](screenshots/whim4.png)
+> Whim that has been training for 1000 years (in three accent color examples)
 
 # Overview
 - **For people who love colors** 🌈
@@ -17,7 +23,7 @@
 	- Maybe evokes scrapbooking energy
 	- Or something like updating your MySpace/Neopets/Gaia Online profile
 	- Make your notes look wildly different from each other if you desire
-	- Core aesthetic is mildly inspired by art nouveau and woodblock prints, but you can do some more cyber/neon-y type stuff too
+	- Core aesthetic is inspired by art nouveau and woodblock prints, but you can do some more cyber/neon-y type stuff too
 - **Dark mode first** 🌃
 	- There's a light mode, but YMMV with that fellow. It's far from fully tested, and some cssclasses, snippets, etc., will not play nice with light mode.
 - **Desktop first** 🖥️
