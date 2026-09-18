@@ -3,6 +3,6 @@ body {
     --background-secondary: var(--bg-color);
 }
 
-.theme-dark .workspace {
+.theme-light .workspace, .theme-dark .workspace {
 	background: var(--gdj-nymph);
 }

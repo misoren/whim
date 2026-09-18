@@ -67,7 +67,8 @@
 ![checkboxes](images/checkboxes.png)
 ---
 - **Style Settings = snippets**
-	- As a personal user, I love Style Settings. But this theme was also made with plugins-off users in mind, e.g., me at work. I've endeavored to make everything you can do in Style Settings with this theme available via snippets as well.
+	- As a personal user, I love Style Settings. But this theme was also made with plugins-off users in mind, e.g., me at work. I've endeavored to make nearly everything you can do in Style Settings with this theme available via snippets as well.
+		- An exception to this currently is the mask/"emboss" setting in Style Settings.
 - *OPTIONAL*: **Several snippets available for this theme**
 	- Most won't work with other themes, but some might!
     - Includes whole-app background alternatives and animations, including some backgrounds that layer (e.g., image and pattern backgrounds generally layer with each other)

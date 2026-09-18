@@ -12,10 +12,11 @@
 */
 
 
-/* TODO TEMP ctrl-f hook panda */
+/* TODO TEMP ctrl-f hook panda koala */
 /* 
 TODO:
-- [/] Finish README, e.g., extended feature section and images
+- [ ] Update licenses.md w/ svgrepo and pixabay info
+- [/] Finish README/docs
 	- [ ] "dashboard" view with multiple panes and notes of different styles, colors, filters
 	- [ ] CREATE NEW VERSION and use the "gems" image as the one for the theme maybe? (need to create new 'cause I've changed the default BG gradient a little)
 	- [ ] Include a little snip of the accent color for some (all?) examples
@@ -26,9 +27,9 @@ TODO:
 - [ ] Add examples to the folder
 	- [ ] Add new all-the-notes note
 
-- [ ] Consider other combo classes, rework current combo classes to use comma-separated lists of classes as needed
-
-- [ ] Try to add masks to style settings again, now that I have a better grasp on how to apply some of the class layering
+- [ ] Create/update snippets for app masks and "emboss" settings
+	- [ ] Do "emboss" versions of the illustration snippets?
+	- [ ] I need to probably...maybe...take stock of the classes and everything that exists in the theme that should also exist as snippets
 
 - [ ] Add note to README: I've made the customizations I can available both as snippets and in Style Settings.
 
@@ -481,6 +482,7 @@ body {
 
 	/* Used by snippets */
 	--bg-color: color-mix(in srgb, transparent, var(--nbg-solid-color) 20%);
+	--bg-more-color: color-mix(in srgb, transparent, var(--nbg-solid-color) 80%);
 }
 
 
@@ -1430,7 +1432,7 @@ body .callout[data-callout*="rainbow"]  {
 	background-image: var(--nbg-rainbow-linear);
 	background-size: auto;
 }
-body .callout[data-callout*="alt_rainbow"]  {
+body .callout[data-callout*="alt-rainbow"]  {
     --callout-icon: none;
 	--callout-color: var(--dw);
 	border-style: solid;
@@ -1443,15 +1445,8 @@ body .callout[data-callout*="shine"]  {
 	background-image: var(--nbg-whim-linear);
 	background-size: auto;
 }
-body .callout[data-callout*="artnouveau2"]  {
-    --callout-icon: none;
-	color: var(--lw);
-	background-image: var(--gdj-artnouveau2);
-	background-size: 100% auto;
-	background-position: 50% 0%;
-	background-repeat: repeat;
-}
-body .callout[data-callout*="woman1"]  {
+body .callout[data-callout*="emboss-woman1"],
+body .callout[data-callout*="svg-woman1"]  {
     --callout-icon: none;
 	color: var(--lw);
 	background-image: var(--gdj-woman1);
@@ -1459,7 +1454,17 @@ body .callout[data-callout*="woman1"]  {
 	background-position: 50% 0%;
 	background-repeat: repeat;
 }
-body .callout[data-callout*="woman3"]  {
+body .callout[data-callout*="emboss-artnouveau2"],
+body .callout[data-callout*="svg-artnouveau2"]  {
+    --callout-icon: none;
+	color: var(--lw);
+	background-image: var(--gdj-artnouveau2);
+	background-size: 100% auto;
+	background-position: 50% 0%;
+	background-repeat: repeat;
+}
+body .callout[data-callout*="emboss-woman3"],
+body .callout[data-callout*="svg-woman3"]  {
     --callout-icon: none;
 	color: var(--lw);
 	background-image: var(--gdj-woman3);
@@ -1467,7 +1472,8 @@ body .callout[data-callout*="woman3"]  {
 	background-position: 50% 0%;
 	background-repeat: repeat;
 }
-body .callout[data-callout*="heron"]  {
+body .callout[data-callout*="emboss-heron"],
+body .callout[data-callout*="svg-heron"]  {
     --callout-icon: none;
 	color: var(--lw);
 	background-image: var(--gdj-heron);
@@ -1475,7 +1481,8 @@ body .callout[data-callout*="heron"]  {
 	background-position: 50% 0%;
 	background-repeat: repeat;
 }
-body .callout[data-callout*="perspective"]  {
+body .callout[data-callout*="emboss-perspective"],
+body .callout[data-callout*="svg-perspective"]  {
     --callout-icon: none;
 	color: var(--lw);
 	background-image: var(--gdj-perspective);
@@ -1483,7 +1490,8 @@ body .callout[data-callout*="perspective"]  {
 	background-position: 50% 0%;
 	background-repeat: repeat;
 }
-body .callout[data-callout*="seamless1"]  {
+body .callout[data-callout*="emboss-seamless1"],
+body .callout[data-callout*="svg-seamless1"]  {
     --callout-icon: none;
 	color: var(--lw);
 	background-image: var(--gdj-seamless1);
@@ -1491,7 +1499,8 @@ body .callout[data-callout*="seamless1"]  {
 	background-position: 50% 0%;
 	background-repeat: repeat;
 }
-body .callout[data-callout*="seamless2"]  {
+body .callout[data-callout*="emboss-seamless2"],
+body .callout[data-callout*="svg-seamless2"]  {
     --callout-icon: none;
 	color: var(--lw);
 	background-image: var(--gdj-seamless2);
@@ -1499,7 +1508,8 @@ body .callout[data-callout*="seamless2"]  {
 	background-position: 50% 0%;
 	background-repeat: repeat;
 }
-body .callout[data-callout*="svg_border"]  {
+body .callout[data-callout*="emboss-border"],
+body .callout[data-callout*="svg-border"]  {
     --callout-icon: none;
 	color: var(--lw);
 	background-image: var(--gdj-border);
@@ -1507,7 +1517,8 @@ body .callout[data-callout*="svg_border"]  {
 	background-position: 50% 0%;
 	background-repeat: repeat;
 }
-body .callout[data-callout*="corner"]  {
+body .callout[data-callout*="emboss-corner"],
+body .callout[data-callout*="svg-corner"]  {
     --callout-icon: none;
 	color: var(--lw);
 	background-image: var(--gdj-corner);
@@ -1515,7 +1526,8 @@ body .callout[data-callout*="corner"]  {
 	background-position: 50% 0%;
 	background-repeat: repeat;
 }
-body .callout[data-callout*="space"]  {
+body .callout[data-callout*="emboss-space"],
+body .callout[data-callout*="svg-space"]  {
     --callout-icon: none;
 	color: var(--lw);
 	background-image: var(--gdj-space);
@@ -1523,7 +1535,8 @@ body .callout[data-callout*="space"]  {
 	background-position: 50% 0%;
 	background-repeat: repeat;
 }
-body .callout[data-callout*="castle"]  {
+body .callout[data-callout*="emboss-castle"],
+body .callout[data-callout*="svg-castle"]  {
     --callout-icon: none;
 	color: var(--lw);
 	background-image: var(--gdj-castle);
@@ -1531,8 +1544,8 @@ body .callout[data-callout*="castle"]  {
 	background-position: 50% 0%;
 	background-repeat: repeat;
 }
-
-body .callout[data-callout*="artnouveau12"]  {
+body .callout[data-callout*="emboss-artnouveau12"],
+body .callout[data-callout*="svg-artnouveau12"]  {
     --callout-icon: none;
 	color: var(--lw);
 	background-image: var(--gdj-artnouveau12);
@@ -1540,8 +1553,8 @@ body .callout[data-callout*="artnouveau12"]  {
 	background-position: 50% 0%;
 	background-repeat: repeat;
 }
-
-body .callout[data-callout*="halftone"]  {
+body .callout[data-callout*="emboss-halftone"],
+body .callout[data-callout*="svg-halftone"]  {
     --callout-icon: none;
 	color: var(--lw);
 	background-image: var(--wandercreative-halftone);
@@ -1549,8 +1562,8 @@ body .callout[data-callout*="halftone"]  {
 	background-position: 50% 0%;
 	background-repeat: repeat;
 }
-
-body .callout[data-callout*="dots"]  {
+body .callout[data-callout*="emboss-dots"],
+body .callout[data-callout*="svg-dots"]  {
     --callout-icon: none;
 	color: var(--lw);
 	background-image: var(--triskeleprint-dots);
@@ -1558,8 +1571,8 @@ body .callout[data-callout*="dots"]  {
 	background-position: 50% 0%;
 	background-repeat: repeat;
 }
-
-body .callout[data-callout*="crying"]  {
+body .callout[data-callout*="emboss-crying"],
+body .callout[data-callout*="svg-crying"]  {
     --callout-icon: none;
 	color: var(--lw);
 	background-image: var(--openclipart-vectors-crying);
@@ -1567,8 +1580,8 @@ body .callout[data-callout*="crying"]  {
 	background-position: 50% 0%;
 	background-repeat: repeat;
 }
-
-body .callout[data-callout*="flowers"]  {
+body .callout[data-callout*="emboss-flowers"],
+body .callout[data-callout*="svg-flowers"]  {
     --callout-icon: none;
 	color: var(--lw);
 	background-image: var(--gdj-flowers);
@@ -1576,8 +1589,8 @@ body .callout[data-callout*="flowers"]  {
 	background-position: 50% 0%;
 	background-repeat: repeat;
 }
-
-body .callout[data-callout*="hand"]  {
+body .callout[data-callout*="emboss-hand"],
+body .callout[data-callout*="svg-hand"]  {
     --callout-icon: none;
 	color: var(--lw);
 	background-image: var(--gdj-hand);
@@ -1585,8 +1598,8 @@ body .callout[data-callout*="hand"]  {
 	background-position: 50% 0%;
 	background-repeat: repeat;
 }
-
-body .callout[data-callout*="compass"]  {
+body .callout[data-callout*="emboss-compass"],
+body .callout[data-callout*="svg-compass"]  {
     --callout-icon: none;
 	color: var(--lw);
 	background-image: var(--gdj-compass);
@@ -1594,8 +1607,8 @@ body .callout[data-callout*="compass"]  {
 	background-position: 50% 0%;
 	background-repeat: repeat;
 }
-
-body .callout[data-callout*="svg_abstract"]  {
+body .callout[data-callout*="emboss-abstract"],
+body .callout[data-callout*="svg-abstract"]  {
     --callout-icon: none;
 	color: var(--lw);
 	background-image: var(--nraproject-abstract);
@@ -1604,15 +1617,14 @@ body .callout[data-callout*="svg_abstract"]  {
 	background-repeat: repeat;
 }
 
-
 /* Callout properties - applied after others */
-body .callout[data-callout*="text_glow"] {
+body .callout[data-callout*="text-glow"] {
     text-shadow: 0 0 9px var(--glow-color1);
 }
-body .callout[data-callout*="text_light_glow"] {
+body .callout[data-callout*="text-light-glow"] {
     text-shadow: 0 0 4px var(--glow-color2);
 }
-body .callout[data-callout*="callout_glow"]  {
+body .callout[data-callout*="callout-glow"]  {
     box-shadow: inset 0 0 15px color-mix(in srgb, var(--glow-color2), transparent 20%);
     text-shadow: 0 0 3px var(--glow-color2);
 }
@@ -1620,68 +1632,92 @@ body .callout[data-callout*="cutout"] {
     box-shadow: inset 5px 5px 15px color-mix(in srgb, var(--shadow-color), transparent 50%);
 	border: none;
 }
-body .callout[data-callout*="no_icon"]  {
+body .callout[data-callout*="no-icon"]  {
     --callout-icon: none;
 }
-body .callout[data-callout*="no_title"] {
+body .callout[data-callout*="no-title"] {
 	--callout-title-size: 0px;
 	padding-top: 2px;
 }
-body .callout[data-callout*="no_title"] .callout-title {
+body .callout[data-callout*="no-title"] .callout-title {
 	visibility: hidden;
 }
-body .callout[data-callout*="no_border"] {
+body .callout[data-callout*="no-border"] {
 	border: none;
 }
-body .callout[data-callout*="solid_border"] {
+body .callout[data-callout*="solid-border"] {
 	border-style: solid;
 }
-body .callout[data-callout*="no_bg"] {
+body .callout[data-callout*="no-bg"] {
 	background: none;
 }
-body .callout[data-callout*="no_stamp"] {
+body .callout[data-callout*="no-callout-color"] {
+	background-color: transparent;
+}
+body .callout[data-callout*="no-stamp"] {
 	background-image: none;
 }
-body .callout[data-callout*="no_glow"] {
+body .callout[data-callout*="no-glow"] {
 	box-shadow: none;
 }
-body .callout[data-callout*="white_text"] {
+body .callout[data-callout*="white-text"] {
 	color: white;
+}
+body .callout[data-callout*="black-text"] {
+	color: black;
 }
 body .callout[data-callout*="nothing"] {
     --callout-icon: none;
+	background: none;
+}
+body .callout[data-callout*="only-bg"],
+body .callout[data-callout*="nothing"] {
 	--callout-title-size: 0px;
 	padding-top: 2px;
 	box-shadow: none;
-	background: none;
 	border: none;
 }
+body .callout[data-callout*="only-bg"] .callout-title,
 body .callout[data-callout*="nothing"] .callout-title {
 	visibility: hidden;
 }
-body .callout[data-callout*="fixed_bg"] {
+body .callout[data-callout*="callout-minheight-100"] {
+	min-height: 100px;
+}
+body .callout[data-callout*="callout-minheight-300"] {
+	min-height: 300px;
+}
+body .callout[data-callout*="callout-minheight-500"] {
+	min-height: 500px;
+}
+body .callout[data-callout*="callout-minheight-700"] {
+	min-height: 700px;
+}
+body .callout[data-callout*="fixed-bg"] {
 	background-attachment: fixed;
 	background-size: 100% auto;
-	/* background-repeat: no-repeat; */
 	background-position-x: 0px;
 	background-position-y: 10%;
 }
-body .callout[data-callout*="no_repeat"] {
+body .callout[data-callout*="mask-no-repeat"] {
+	-webkit-mask-repeat: no-repeat;
+}
+body .callout[data-callout*="bg-no-repeat"] {
 	background-repeat: no-repeat;
 }
-body .callout[data-callout*="small_bg"] {
+body .callout[data-callout*="small-bg"] {
 	background-size: 50% auto;
 }
-body .callout[data-callout*="big_bg"] {
+body .callout[data-callout*="big-bg"] {
 	background-size: 200% auto;
 }
-body .callout[data-callout*="bg_lines"] {
+body .callout[data-callout*="bg-lines"] {
 	background-image: var(--nbg-whim-lines);
 	background-size: auto;
 	background-position: initial;
 	background-repeat: unset;
 }
-body .callout[data-callout*="bg_net"] {
+body .callout[data-callout*="bg-net"] {
 	--nett: 75%;
 	--netsize: 120px;
 	--netsizewidth: 122px;
@@ -1693,70 +1729,70 @@ body .callout[data-callout*="bg_net"] {
 	background-position: 50% 50%;
     background-attachment: fixed;
 }
-body .callout[data-callout*="callout_red"] {
+body .callout[data-callout*="callout-red"] {
 	--callout-color: var(--color-red);
 }
-body .callout[data-callout*="callout_orange"] {
+body .callout[data-callout*="callout-orange"] {
 	--callout-color: var(--color-orange);
 }
-body .callout[data-callout*="callout_yellow"] {
+body .callout[data-callout*="callout-yellow"] {
 	--callout-color: var(--color-yellow);
 }
-body .callout[data-callout*="callout_green"] {
+body .callout[data-callout*="callout-green"] {
 	--callout-color: var(--color-green);
 }
-body .callout[data-callout*="callout_cyan"] {
+body .callout[data-callout*="callout-cyan"] {
 	--callout-color: var(--color-cyan);
 }
-body .callout[data-callout*="callout_blue"] {
+body .callout[data-callout*="callout-blue"] {
 	--callout-color: var(--color-blue);
 }
-body .callout[data-callout*="callout_purple"] {
+body .callout[data-callout*="callout-purple"] {
 	--callout-color: var(--color-purple);
 }
-body .callout[data-callout*="callout_pink"] {
+body .callout[data-callout*="callout-pink"] {
 	--callout-color: var(--color-pink);
 }
-body .callout[data-callout*="callout_whim"] {
+body .callout[data-callout*="callout-whim"] {
 	--callout-color: var(--whim-color);
 }
-body .callout[data-callout*="callout_light"] {
+body .callout[data-callout*="callout-light"] {
 	--callout-color: var(--lw);
 }
-body .callout[data-callout*="callout_bright"] {
+body .callout[data-callout*="callout-bright"] {
 	--callout-color: var(--bcon);
 }
-body .callout[data-callout*="callout_dark"] {
+body .callout[data-callout*="callout-dark"] {
 	--callout-color: var(--dw);
 }
-body .callout[data-callout*="callout_black"] {
+body .callout[data-callout*="callout-black"] {
 	--callout-color: black;
 }
-body .callout[data-callout*="callout_contrast"] {
+body .callout[data-callout*="callout-contrast"] {
 	--callout-color: var(--dcon);
 }
 body .callout[data-callout*="popout"]:hover {
 	transform: scale(1.05);
 }
-body .callout[data-callout*="border_strong"] {
+body .callout[data-callout*="border-strong"] {
 	border-color: var(--dark-whim);
 	border-width: 3px;
 }
-body .callout[data-callout*="big_text"] {
+body .callout[data-callout*="big-text"] {
 	font-size: 1.75em;
 }
 body .callout[data-callout*="gigantext"] {
 	font-size: 4em;
 	font-weight: 800;
 }
-body .callout[data-callout*="truly_large_text"] {
+body .callout[data-callout*="truly-large-text"] {
 	font-size: 10em;
 	font-weight: 800;
 }
-body .callout[data-callout*="center_text"] {
+body .callout[data-callout*="center-text"] {
 	text-align: center;
 }
-body .callout[data-callout*="text_cut"] {
+body .callout[data-callout*="text-cut"] {
 	color: transparent;
   	background-clip: text;
     --callout-icon: none;
@@ -1764,28 +1800,55 @@ body .callout[data-callout*="text_cut"] {
 	padding-top: 2px;
 	background-color: var(--callout-color);
 }
-body .callout[data-callout*="text_cut"] .callout-title {
+body .callout[data-callout*="text-cut"] .callout-title {
 	visibility: hidden;
 }
-body .callout[data-callout*="text_cut"]:hover {
+body .callout[data-callout*="text-cut"]:hover {
 	border: none;
 }
-body .callout[data-callout*="font_header"] {
+body .callout[data-callout*="filter-invert"] {
+	filter: invert(1);
+}
+body .callout[data-callout*="filter-pink"] {
+	filter: invert(10%) sepia(75%) saturate(120%) hue-rotate(-100deg) brightness(175%) contrast(125%);
+}
+body .callout[data-callout*="filter-red"] {
+	filter: invert(10%) sepia(75%) saturate(160%) hue-rotate(-80deg) brightness(175%) contrast(125%);
+}
+body .callout[data-callout*="filter-brown"] {
+	filter: invert(10%) sepia(75%) saturate(100%) hue-rotate(-30deg) brightness(175%) contrast(125%);
+}
+body .callout[data-callout*="filter-yellow"] {
+	filter: invert(10%) sepia(75%) saturate(150%) hue-rotate(0deg) brightness(175%) contrast(125%);
+}
+body .callout[data-callout*="filter-green"] {
+	filter: invert(10%) sepia(75%) saturate(100%) hue-rotate(80deg) brightness(175%) contrast(125%);
+}
+body .callout[data-callout*="filter-blue"] {
+	filter: invert(10%) sepia(75%) saturate(160%) hue-rotate(200deg) brightness(175%) contrast(125%);
+}
+body .callout[data-callout*="filter-purple"] {
+	filter: invert(10%) sepia(75%) saturate(120%) hue-rotate(225deg) brightness(175%) contrast(125%);
+}
+body .callout[data-callout*="filter-blur"] {
+	filter: blur(2px);
+}
+body .callout[data-callout*="font-header"] {
 	font-family: var(--hfont);
 }
-body .callout[data-callout*="font_faculty"] {
+body .callout[data-callout*="font-faculty"] {
 	font-family: 'Faculty_Glyphic';
 }
-body .callout[data-callout*="font_specialelite"] {
+body .callout[data-callout*="font-specialelite"] {
 	font-family: 'Special_Elite';
 }
-body .callout[data-callout*="font_silkscreen"] {
+body .callout[data-callout*="font-silkscreen"] {
 	font-family: 'Silkscreen';
 }
-body .callout[data-callout*="font_glassantiqua"] {
+body .callout[data-callout*="font-glassantiqua"] {
 	font-family: 'Glass_Antiqua';
 }
-body .callout[data-callout*="font_orbitron"] {
+body .callout[data-callout*="font-orbitron"] {
 	font-family: 'Orbitron';
 }
 
@@ -2708,7 +2771,7 @@ li[data-task="`"] > p > input:checked {
 ##############################################################
 ##############################################################
 # 
-# Note classes
+# Note classes/cssclasses
 #
 ##############################################################
 ##############################################################
@@ -3141,98 +3204,117 @@ body.whim-bg-gems .workspace, .whim-bg-gems {
 }
 
 /* illustration BGs */
-
+/* koala */
 body.whim-bg-stamp-woman1 .workspace, 
+body.whim-emboss-woman1-app .workspace,
 .whim-emboss-woman1,
 .whim-bg-stamp-woman1 {
 	--stamp-svg: var(--gdj-woman1);
 }
 body.whim-bg-stamp-artnouveau2 .workspace, 
+body.whim-emboss-artnouveau2-app .workspace,
 .whim-emboss-artnouveau2,
 .whim-bg-stamp-artnouveau2 {
 	--stamp-svg: var(--gdj-artnouveau2);
 }
 body.whim-bg-stamp-woman3 .workspace, 
+body.whim-emboss-woman3-app .workspace,
 .whim-emboss-woman3,
 .whim-bg-stamp-woman3 {
 	--stamp-svg: var(--gdj-woman3);
 }
 body.whim-bg-stamp-heron .workspace, 
+body.whim-emboss-heron-app .workspace,
 .whim-emboss-heron,
 .whim-bg-stamp-heron {
 	--stamp-svg: var(--gdj-heron);
 }
 body.whim-bg-stamp-perspective .workspace, 
+body.whim-emboss-perspective-app .workspace,
 .whim-emboss-perspective,
 .whim-bg-stamp-perspective {
 	--stamp-svg: var(--gdj-perspective);
 }
 body.whim-bg-stamp-seamless2 .workspace, 
+body.whim-emboss-seamless2-app .workspace,
 .whim-emboss-seamless2,
 .whim-bg-stamp-seamless2 {
 	--stamp-svg: var(--gdj-seamless2);
 }
 body.whim-bg-stamp-seamless1 .workspace, 
+body.whim-emboss-seamless1-app .workspace,
 .whim-emboss-seamless1,
 .whim-bg-stamp-seamless1 {
 	--stamp-svg: var(--gdj-seamless1);
 }
 body.whim-bg-stamp-border .workspace, 
+body.whim-emboss-border-app .workspace,
 .whim-emboss-border,
 .whim-bg-stamp-border {
 	--stamp-svg: var(--gdj-border);
 }
 body.whim-bg-stamp-corner .workspace, 
+body.whim-emboss-corner-app .workspace,
 .whim-emboss-corner,
 .whim-bg-stamp-corner {
 	--stamp-svg: var(--gdj-corner);
 }
 body.whim-bg-stamp-space .workspace, 
+body.whim-emboss-space-app .workspace,
 .whim-emboss-space,
 .whim-bg-stamp-space {
 	--stamp-svg: var(--gdj-space);
 }
 body.whim-bg-stamp-castle .workspace, 
+body.whim-emboss-castle-app .workspace,
 .whim-emboss-castle,
 .whim-bg-stamp-castle {
 	--stamp-svg: var(--gdj-castle);
 }
 body.whim-bg-stamp-artnouveau12 .workspace,  
+body.whim-emboss-artnouveau12-app .workspace,
 .whim-emboss-artnouveau12,
 .whim-bg-stamp-artnouveau12 {
 	--stamp-svg: var(--gdj-artnouveau12);
 }
 body.whim-bg-stamp-halftone .workspace, 
+body.whim-emboss-halftone-app .workspace,
 .whim-emboss-halftone,
 .whim-bg-stamp-halftone {
 	--stamp-svg: var(--wandercreative-halftone);
 }
 body.whim-bg-stamp-dots .workspace, 
+body.whim-emboss-dots-app .workspace,
 .whim-emboss-dots,
 .whim-bg-stamp-dots {
 	--stamp-svg: var(--triskeleprint-dots);
 }
 body.whim-bg-stamp-crying .workspace, 
+body.whim-emboss-crying-app .workspace,
 .whim-emboss-crying,
 .whim-bg-stamp-crying {
 	--stamp-svg: var(--openclipart-vectors-crying);
 }
 body.whim-bg-stamp-flowers .workspace, 
+body.whim-emboss-flowers-app .workspace,
 .whim-emboss-flowers,
 .whim-bg-stamp-flowers {
 	--stamp-svg: var(--gdj-flowers);
 }
 body.whim-bg-stamp-hand .workspace, 
+body.whim-emboss-hand-app .workspace,
 .whim-emboss-hand,
 .whim-bg-stamp-hand {
 	--stamp-svg: var(--gdj-hand);
 }
 body.whim-bg-stamp-compass .workspace,
+body.whim-emboss-compass-app .workspace,
 .whim-emboss-compass,
 .whim-bg-stamp-compass {
 	--stamp-svg: var(--gdj-compass);
 }
 body.whim-bg-stamp-abstract .workspace, 
+body.whim-emboss-abstract-app .workspace,
 .whim-emboss-abstract,
 .whim-bg-stamp-abstract {
 	--stamp-svg: var(--nraproject-abstract);
@@ -3382,23 +3464,45 @@ body.whim-bg-stamp-magic .workspace,
 .whim-emboss-hand,
 .whim-emboss-compass,
 .whim-emboss-abstract,
+/* emboss app classes */
+/* koala */
+body.whim-emboss-woman1-app .workspace,
+body.whim-emboss-artnouveau2-app .workspace,
+body.whim-emboss-woman3-app .workspace,
+body.whim-emboss-heron-app .workspace,
+body.whim-emboss-perspective-app .workspace,
+body.whim-emboss-seamless1-app .workspace,
+body.whim-emboss-seamless2-app .workspace,
+body.whim-emboss-border-app .workspace,
+body.whim-emboss-corner-app .workspace,
+body.whim-emboss-space-app .workspace,
+body.whim-emboss-castle-app .workspace,
+body.whim-emboss-artnouveau12-app .workspace,
+body.whim-emboss-halftone-app .workspace,
+body.whim-emboss-dots-app .workspace,
+body.whim-emboss-crying-app .workspace,
+body.whim-emboss-flowers-app .workspace,
+body.whim-emboss-hand-app .workspace,
+body.whim-emboss-compass-app .workspace,
+body.whim-emboss-abstract-app .workspace,
 /* core note cssclass for "stamp" BGs */
 .whim-bg-diy-stamp {
 	background-image: var(--stamp-svg);
 	background-position: 50% -2%;
 }
 
-body.whim-bg-image-stars1 .horizontal-main-container,
-.whim-bg-image-stars1 .cm-editor {
+body.whim-bg-image-stars1-app .horizontal-main-container,
+.whim-bg-image-stars1 .cm-editor 
+{
 	background: var(--stars1-image);
 	background-size: auto 102%;
 }
-body.whim-bg-image-rainy1 .horizontal-main-container,
+body.whim-bg-image-rainy1-app .horizontal-main-container,
 .whim-bg-image-rainy1 .cm-editor {
 	background: var(--rainy1-image);
 	background-size: auto 102%;
 }
-body.whim-bg-image-rainy2 .horizontal-main-container,
+body.whim-bg-image-rainy2-app .horizontal-main-container,
 .whim-bg-image-rainy2 .cm-editor {
 	background: var(--rainy2-image);
 	background-size: auto 102%;
@@ -3432,6 +3536,28 @@ body.whim-bg-biggest .workspace,
 .whim-bg-biggest {
 	background-size: 400%;
 }
+/* koala */
+body.whim-emboss-abstract-app .workspace,
+body.whim-emboss-compass-app .workspace,
+body.whim-emboss-hand-app .workspace,
+body.whim-emboss-flowers-app .workspace,
+body.whim-emboss-crying-app .workspace,
+body.whim-emboss-dots-app .workspace,
+body.whim-emboss-halftone-app .workspace,
+body.whim-emboss-artnouveau12-app .workspace,
+body.whim-emboss-castle-app .workspace,
+body.whim-emboss-space-app .workspace,
+body.whim-emboss-corner-app .workspace,
+body.whim-emboss-border-app .workspace,
+body.whim-emboss-seamless2-app .workspace,
+body.whim-emboss-seamless1-app .workspace,
+body.whim-emboss-perspective-app .workspace,
+body.whim-emboss-heron-app .workspace,
+body.whim-emboss-woman3-app .workspace,
+body.whim-emboss-artnouveau2-app .workspace,
+body.whim-emboss-woman1-app .workspace {
+	background-size: auto;
+}
 body.whim-bg-size-reset .workspace,
 .whim-bg-size-reset {
 	background-size: 100%;
@@ -3455,6 +3581,67 @@ body.whim-bg-comfy .workspace,
 .whim-bg-comfy {
 	background-position: 50% 10%;
 }
+
+/* BG center position */
+/* koala */
+body.whim-emboss-woman1-app .workspace,
+body.whim-emboss-artnouveau2-app .workspace,
+body.whim-emboss-woman3-app .workspace,
+body.whim-emboss-heron-app .workspace,
+body.whim-emboss-perspective-app .workspace,
+body.whim-emboss-seamless1-app .workspace,
+body.whim-emboss-seamless2-app .workspace,
+body.whim-emboss-border-app .workspace,
+body.whim-emboss-corner-app .workspace,
+body.whim-emboss-space-app .workspace,
+body.whim-emboss-castle-app .workspace,
+body.whim-emboss-artnouveau12-app .workspace,
+body.whim-emboss-halftone-app .workspace,
+body.whim-emboss-dots-app .workspace,
+body.whim-emboss-crying-app .workspace,
+body.whim-emboss-flowers-app .workspace,
+body.whim-emboss-hand-app .workspace,
+body.whim-emboss-compass-app .workspace,
+body.whim-emboss-abstract-app .workspace,
+body .callout[data-callout*="mask-woman1"],
+body .callout[data-callout*="emboss-woman1"],
+body .callout[data-callout*="mask-artnouveau2"],
+body .callout[data-callout*="emboss-artnouveau2"],
+body .callout[data-callout*="mask-woman3"],
+body .callout[data-callout*="emboss-woman3"],
+body .callout[data-callout*="mask-heron"],
+body .callout[data-callout*="emboss-heron"],
+body .callout[data-callout*="mask-perspective"],
+body .callout[data-callout*="emboss-perspective"],
+body .callout[data-callout*="mask-seamless1"],
+body .callout[data-callout*="emboss-seamless1"],
+body .callout[data-callout*="mask-seamless2"],
+body .callout[data-callout*="emboss-seamless2"],
+body .callout[data-callout*="mask-border"],
+body .callout[data-callout*="emboss-border"],
+body .callout[data-callout*="mask-corner"],
+body .callout[data-callout*="emboss-corner"],
+body .callout[data-callout*="mask-space"],
+body .callout[data-callout*="emboss-space"],
+body .callout[data-callout*="mask-castle"],
+body .callout[data-callout*="emboss-castle"],
+body .callout[data-callout*="mask-artnouveau12"],
+body .callout[data-callout*="emboss-artnouveau12"],
+body .callout[data-callout*="mask-halftone"],
+body .callout[data-callout*="emboss-halftone"],
+body .callout[data-callout*="mask-dots"],
+body .callout[data-callout*="emboss-dots"],
+body .callout[data-callout*="mask-crying"],
+body .callout[data-callout*="emboss-crying"],
+body .callout[data-callout*="mask-flowers"],
+body .callout[data-callout*="emboss-flowers"],
+body .callout[data-callout*="mask-hand"],
+body .callout[data-callout*="emboss-hand"],
+body .callout[data-callout*="mask-compass"],
+body .callout[data-callout*="emboss-compass"],
+body .callout[data-callout*="mask-abstract"],
+body .callout[data-callout*="emboss-abstract"],
+body .callout[data-callout*="center-bg"]
 body.whim-bg-center .workspace, 
 .whim-emboss-woman1,
 .whim-emboss-artnouveau2,
@@ -3490,6 +3677,7 @@ body.whim-bg-askew-center .workspace,
 .whim-bg-askew-center {
 	background-position: calc(50% + 5px) calc(50% + 3px);
 }
+body .callout[data-callout*="default-bg"]
 .whim-bg-default {
 	background-position: 0px 0px;
 }
@@ -3638,6 +3826,7 @@ body.whim-bg-askew-center .workspace,
 			color-mix(in srgb, black, transparent 40%)
 		);		
 }
+body.whim-mask-scanlines-app .workspace,
 .whim-mask-scanlines {
 	-webkit-mask-image: var(--nmask-whim-scanlines);
 }
@@ -3664,6 +3853,11 @@ body.whim-bg-askew-center .workspace,
 .whim-mask-woman1-fademore {
 	-webkit-mask-image: var(--gdj-woman1), linear-gradient(black 35%, transparent 65%);
 }
+/* koala */
+body.whim-mask-woman1-app .workspace,
+body.whim-emboss-woman1-app .workspace,
+body .callout[data-callout*="mask-woman1"],
+body .callout[data-callout*="emboss-woman1"],
 .whim-emboss-woman1,
 .whim-mask-woman1-simple {
 	-webkit-mask-image: var(--gdj-woman1), linear-gradient(color-mix(in srgb, black, transparent 25%) 25%, color-mix(in srgb, black, transparent 50%) 75%);
@@ -3680,6 +3874,10 @@ body.whim-bg-askew-center .workspace,
 .whim-mask-artnouveau2-fademore {
 	-webkit-mask-image: var(--gdj-artnouveau2), linear-gradient(black 35%, transparent 65%);
 }
+body.whim-mask-artnouveau2-app .workspace,
+body.whim-emboss-artnouveau2-app .workspace,
+body .callout[data-callout*="mask-artnouveau2"],
+body .callout[data-callout*="emboss-artnouveau2"],
 .whim-emboss-artnouveau2,
 .whim-mask-artnouveau2-simple {
 	-webkit-mask-image: var(--gdj-artnouveau2), linear-gradient(color-mix(in srgb, black, transparent 25%) 25%, color-mix(in srgb, black, transparent 50%) 75%);
@@ -3696,6 +3894,10 @@ body.whim-bg-askew-center .workspace,
 .whim-mask-woman3-fademore {
 	-webkit-mask-image: var(--gdj-woman3), linear-gradient(black 35%, transparent 65%);
 }
+body.whim-mask-woman3-app .workspace,
+body.whim-emboss-woman3-app .workspace,
+body .callout[data-callout*="mask-woman3"],
+body .callout[data-callout*="emboss-woman3"],
 .whim-emboss-woman3,
 .whim-mask-woman3-simple {
 	-webkit-mask-image: var(--gdj-woman3), linear-gradient(color-mix(in srgb, black, transparent 25%) 25%, color-mix(in srgb, black, transparent 50%) 75%);
@@ -3712,6 +3914,10 @@ body.whim-bg-askew-center .workspace,
 .whim-mask-heron-fademore {
 	-webkit-mask-image: var(--gdj-heron), linear-gradient(black 35%, transparent 65%);
 }
+body.whim-mask-heron-app .workspace,
+body.whim-emboss-heron-app .workspace,
+body .callout[data-callout*="mask-heron"],
+body .callout[data-callout*="emboss-heron"],
 .whim-emboss-heron,
 .whim-mask-heron-simple {
 	-webkit-mask-image: var(--gdj-heron), linear-gradient(color-mix(in srgb, black, transparent 25%) 25%, color-mix(in srgb, black, transparent 50%) 75%);
@@ -3728,6 +3934,10 @@ body.whim-bg-askew-center .workspace,
 .whim-mask-perspective-fademore {
 	-webkit-mask-image: var(--gdj-perspective), linear-gradient(black 35%, transparent 65%);
 }
+body.whim-mask-perspective-app .workspace,
+body.whim-emboss-perspective-app .workspace,
+body .callout[data-callout*="mask-perspective"],
+body .callout[data-callout*="emboss-perspective"],
 .whim-emboss-perspective,
 .whim-mask-perspective-simple {
 	-webkit-mask-image: var(--gdj-perspective), linear-gradient(color-mix(in srgb, black, transparent 25%) 25%, color-mix(in srgb, black, transparent 50%) 75%);
@@ -3744,6 +3954,10 @@ body.whim-bg-askew-center .workspace,
 .whim-mask-seamless1-fademore {
 	-webkit-mask-image: var(--gdj-seamless1), linear-gradient(black 35%, transparent 65%);
 }
+body.whim-mask-seamless1-app .workspace,
+body.whim-emboss-seamless1-app .workspace,
+body .callout[data-callout*="mask-seamless1"],
+body .callout[data-callout*="emboss-seamless1"],
 .whim-emboss-seamless1,
 .whim-mask-seamless1-simple {
 	-webkit-mask-image: var(--gdj-seamless1), linear-gradient(color-mix(in srgb, black, transparent 25%) 25%, color-mix(in srgb, black, transparent 50%) 75%);
@@ -3760,6 +3974,10 @@ body.whim-bg-askew-center .workspace,
 .whim-mask-seamless2-fademore {
 	-webkit-mask-image: var(--gdj-seamless2), linear-gradient(black 35%, transparent 65%);
 }
+body.whim-mask-seamless2-app .workspace,
+body.whim-emboss-seamless2-app .workspace,
+body .callout[data-callout*="mask-seamless2"],
+body .callout[data-callout*="emboss-seamless2"],
 .whim-emboss-seamless2,
 .whim-mask-seamless2-simple {
 	-webkit-mask-image: var(--gdj-seamless2), linear-gradient(color-mix(in srgb, black, transparent 25%) 25%, color-mix(in srgb, black, transparent 50%) 75%);
@@ -3776,6 +3994,10 @@ body.whim-bg-askew-center .workspace,
 .whim-mask-border-fademore {
 	-webkit-mask-image: var(--gdj-border), linear-gradient(black 35%, transparent 65%);
 }
+body.whim-mask-border-app .workspace,
+body.whim-emboss-border-app .workspace,
+body .callout[data-callout*="mask-border"],
+body .callout[data-callout*="emboss-border"],
 .whim-emboss-border,
 .whim-mask-border-simple {
 	-webkit-mask-image: var(--gdj-border), linear-gradient(color-mix(in srgb, black, transparent 25%) 25%, color-mix(in srgb, black, transparent 50%) 75%);
@@ -3792,6 +4014,10 @@ body.whim-bg-askew-center .workspace,
 .whim-mask-corner-fademore {
 	-webkit-mask-image: var(--gdj-corner), linear-gradient(black 35%, transparent 65%);
 }
+body.whim-mask-corner-app .workspace,
+body.whim-emboss-corner-app .workspace,
+body .callout[data-callout*="mask-corner"],
+body .callout[data-callout*="emboss-corner"],
 .whim-emboss-corner,
 .whim-mask-corner-simple {
 	-webkit-mask-image: var(--gdj-corner), linear-gradient(color-mix(in srgb, black, transparent 25%) 25%, color-mix(in srgb, black, transparent 50%) 75%);
@@ -3808,6 +4034,10 @@ body.whim-bg-askew-center .workspace,
 .whim-mask-space-fademore {
 	-webkit-mask-image: var(--gdj-space), linear-gradient(black 35%, transparent 65%);
 }
+body.whim-mask-space-app .workspace,
+body.whim-emboss-space-app .workspace,
+body .callout[data-callout*="mask-space"],
+body .callout[data-callout*="emboss-space"],
 .whim-emboss-space,
 .whim-mask-space-simple {
 	-webkit-mask-image: var(--gdj-space), linear-gradient(color-mix(in srgb, black, transparent 25%) 25%, color-mix(in srgb, black, transparent 50%) 75%);
@@ -3824,6 +4054,10 @@ body.whim-bg-askew-center .workspace,
 .whim-mask-castle-fademore {
 	-webkit-mask-image: var(--gdj-castle), linear-gradient(black 35%, transparent 65%);
 } 
+body.whim-mask-castle-app .workspace,
+body.whim-emboss-castle-app .workspace,
+body .callout[data-callout*="mask-castle"],
+body .callout[data-callout*="emboss-castle"],
 .whim-emboss-castle,
 .whim-mask-castle-simple {
 	-webkit-mask-image: var(--gdj-castle), linear-gradient(color-mix(in srgb, black, transparent 25%) 25%, color-mix(in srgb, black, transparent 50%) 75%);
@@ -3840,6 +4074,10 @@ body.whim-bg-askew-center .workspace,
 .whim-mask-artnouveau12-fademore {
 	-webkit-mask-image: var(--gdj-artnouveau12), linear-gradient(black 35%, transparent 65%);
 } 
+body.whim-mask-artnouveau12-app .workspace,
+body.whim-emboss-artnouveau12-app .workspace,
+body .callout[data-callout*="mask-artnouveau12"],
+body .callout[data-callout*="emboss-artnouveau12"],
 .whim-emboss-artnouveau12,
 .whim-mask-artnouveau12-simple {
 	-webkit-mask-image: var(--gdj-artnouveau12), linear-gradient(color-mix(in srgb, black, transparent 25%) 25%, color-mix(in srgb, black, transparent 50%) 75%);
@@ -3856,6 +4094,10 @@ body.whim-bg-askew-center .workspace,
 .whim-mask-halftone-fademore {
 	-webkit-mask-image: var(--wandercreative-halftone), linear-gradient(black 35%, transparent 65%);
 }
+body.whim-mask-halftone-app .workspace,
+body.whim-emboss-halftone-app .workspace,
+body .callout[data-callout*="mask-halftone"],
+body .callout[data-callout*="emboss-halftone"],
 .whim-emboss-halftone,
 .whim-mask-halftone-simple {
 	-webkit-mask-image: var(--wandercreative-halftone), linear-gradient(color-mix(in srgb, black, transparent 25%) 25%, color-mix(in srgb, black, transparent 50%) 75%);
@@ -3872,6 +4114,10 @@ body.whim-bg-askew-center .workspace,
 .whim-mask-dots-fademore {
 	-webkit-mask-image: var(--triskeleprint-dots), linear-gradient(black 35%, transparent 65%);
 }
+body.whim-mask-dots-app .workspace,
+body.whim-emboss-dots-app .workspace,
+body .callout[data-callout*="mask-dots"],
+body .callout[data-callout*="emboss-dots"],
 .whim-emboss-dots,
 .whim-mask-dots-simple {
 	-webkit-mask-image: var(--triskeleprint-dots), linear-gradient(color-mix(in srgb, black, transparent 25%) 25%, color-mix(in srgb, black, transparent 50%) 75%);
@@ -3888,6 +4134,10 @@ body.whim-bg-askew-center .workspace,
 .whim-mask-crying-fademore {
 	-webkit-mask-image: var(--openclipart-vectors-crying), linear-gradient(black 35%, transparent 65%);
 }
+body.whim-mask-crying-app .workspace,
+body.whim-emboss-crying-app .workspace,
+body .callout[data-callout*="mask-crying"],
+body .callout[data-callout*="emboss-crying"],
 .whim-emboss-crying,
 .whim-mask-crying-simple {
 	-webkit-mask-image: var(--openclipart-vectors-crying), linear-gradient(color-mix(in srgb, black, transparent 25%) 25%, color-mix(in srgb, black, transparent 50%) 75%);
@@ -3904,6 +4154,10 @@ body.whim-bg-askew-center .workspace,
 .whim-mask-flowers-fademore {
 	-webkit-mask-image: var(--gdj-flowers), linear-gradient(black 35%, transparent 65%);
 }
+body.whim-mask-flowers-app .workspace,
+body.whim-emboss-flowers-app .workspace,
+body .callout[data-callout*="mask-flowers"],
+body .callout[data-callout*="emboss-flowers"],
 .whim-emboss-flowers,
 .whim-mask-flowers-simple {
 	-webkit-mask-image: var(--gdj-flowers), linear-gradient(color-mix(in srgb, black, transparent 25%) 25%, color-mix(in srgb, black, transparent 50%) 75%);
@@ -3920,6 +4174,10 @@ body.whim-bg-askew-center .workspace,
 .whim-mask-hand-fademore {
 	-webkit-mask-image: var(--gdj-hand), linear-gradient(black 35%, transparent 65%);
 }
+body.whim-mask-hand-app .workspace,
+body.whim-emboss-hand-app .workspace,
+body .callout[data-callout*="mask-hand"],
+body .callout[data-callout*="emboss-hand"],
 .whim-emboss-hand,
 .whim-mask-hand-simple {
 	-webkit-mask-image: var(--gdj-hand), linear-gradient(color-mix(in srgb, black, transparent 25%) 25%, color-mix(in srgb, black, transparent 50%) 75%);
@@ -3936,6 +4194,10 @@ body.whim-bg-askew-center .workspace,
 .whim-mask-compass-fademore {
 	-webkit-mask-image: var(--gdj-compass), linear-gradient(black 35%, transparent 65%);
 }
+body.whim-mask-compass-app .workspace,
+body.whim-emboss-compass-app .workspace,
+body .callout[data-callout*="mask-compass"],
+body .callout[data-callout*="emboss-compass"],
 .whim-emboss-compass,
 .whim-mask-compass-simple {
 	-webkit-mask-image: var(--gdj-compass), linear-gradient(color-mix(in srgb, black, transparent 25%) 25%, color-mix(in srgb, black, transparent 50%) 75%);
@@ -3952,15 +4214,82 @@ body.whim-bg-askew-center .workspace,
 .whim-mask-abstract-fademore {
 	-webkit-mask-image: var(--nraproject-abstract), linear-gradient(black 35%, transparent 65%);
 }
+body.whim-mask-abstract-app .workspace,
+body.whim-emboss-abstract-app .workspace,
+body .callout[data-callout*="mask-abstract"],
+body .callout[data-callout*="emboss-abstract"],
 .whim-emboss-abstract,
 .whim-mask-abstract-simple {
 	-webkit-mask-image: var(--nraproject-abstract), linear-gradient(color-mix(in srgb, black, transparent 25%) 25%, color-mix(in srgb, black, transparent 50%) 75%);
 }
 
 
+.whim-mask-default {
+	-webkit-mask-position: calc(50% + 2px) 3px;
+}
 .whim-mask-center {
 	-webkit-mask-position: center;
 }
+
+/* koala */
+/* mask center position */
+body.whim-emboss-woman1-app .workspace,
+body.whim-emboss-artnouveau2-app .workspace,
+body.whim-emboss-woman3-app .workspace,
+body.whim-emboss-heron-app .workspace,
+body.whim-emboss-perspective-app .workspace,
+body.whim-emboss-seamless1-app .workspace,
+body.whim-emboss-seamless2-app .workspace,
+body.whim-emboss-border-app .workspace,
+body.whim-emboss-corner-app .workspace,
+body.whim-emboss-space-app .workspace,
+body.whim-emboss-castle-app .workspace,
+body.whim-emboss-artnouveau12-app .workspace,
+body.whim-emboss-halftone-app .workspace,
+body.whim-emboss-dots-app .workspace,
+body.whim-emboss-crying-app .workspace,
+body.whim-emboss-flowers-app .workspace,
+body.whim-emboss-hand-app .workspace,
+body.whim-emboss-compass-app .workspace,
+body.whim-emboss-abstract-app .workspace,
+body .callout[data-callout*="mask-woman1"],
+body .callout[data-callout*="emboss-woman1"],
+body .callout[data-callout*="mask-artnouveau2"],
+body .callout[data-callout*="emboss-artnouveau2"],
+body .callout[data-callout*="mask-woman3"],
+body .callout[data-callout*="emboss-woman3"],
+body .callout[data-callout*="mask-heron"],
+body .callout[data-callout*="emboss-heron"],
+body .callout[data-callout*="mask-perspective"],
+body .callout[data-callout*="emboss-perspective"],
+body .callout[data-callout*="mask-seamless1"],
+body .callout[data-callout*="emboss-seamless1"],
+body .callout[data-callout*="mask-seamless2"],
+body .callout[data-callout*="emboss-seamless2"],
+body .callout[data-callout*="mask-border"],
+body .callout[data-callout*="emboss-border"],
+body .callout[data-callout*="mask-corner"],
+body .callout[data-callout*="emboss-corner"],
+body .callout[data-callout*="mask-space"],
+body .callout[data-callout*="emboss-space"],
+body .callout[data-callout*="mask-castle"],
+body .callout[data-callout*="emboss-castle"],
+body .callout[data-callout*="mask-artnouveau12"],
+body .callout[data-callout*="emboss-artnouveau12"],
+body .callout[data-callout*="mask-halftone"],
+body .callout[data-callout*="emboss-halftone"],
+body .callout[data-callout*="mask-dots"],
+body .callout[data-callout*="emboss-dots"],
+body .callout[data-callout*="mask-crying"],
+body .callout[data-callout*="emboss-crying"],
+body .callout[data-callout*="mask-flowers"],
+body .callout[data-callout*="emboss-flowers"],
+body .callout[data-callout*="mask-hand"],
+body .callout[data-callout*="emboss-hand"],
+body .callout[data-callout*="mask-compass"],
+body .callout[data-callout*="emboss-compass"],
+body .callout[data-callout*="mask-abstract"],
+body .callout[data-callout*="emboss-abstract"],
 .whim-emboss-woman1,
 .whim-emboss-artnouveau2,
 .whim-emboss-woman3,
@@ -3981,7 +4310,7 @@ body.whim-bg-askew-center .workspace,
 .whim-emboss-compass,
 .whim-emboss-abstract,
 .whim-mask-askew-center {
-	-webkit-mask-position: calc(50% + 5px) calc(50% + 3px);
+	-webkit-mask-position: calc(50% + 2px) calc(50% + 3px);
 }
 .whim-mask-right {
 	-webkit-mask-position: right;
@@ -3992,9 +4321,55 @@ body.whim-bg-askew-center .workspace,
 .whim-mask-bottom {
 	-webkit-mask-position: bottom;
 }
-.whim-mask-norepeat {
+.whim-mask-no-repeat .workspace,
+.whim-mask-no-repeat {
 	-webkit-mask-repeat: no-repeat;
 }
+body .callout[data-callout*="mask-woman1"],
+body .callout[data-callout*="emboss-woman1"],
+body .callout[data-callout*="mask-artnouveau2"],
+body .callout[data-callout*="emboss-artnouveau2"],
+body .callout[data-callout*="mask-woman3"],
+body .callout[data-callout*="emboss-woman3"],
+body .callout[data-callout*="mask-heron"],
+body .callout[data-callout*="emboss-heron"],
+body .callout[data-callout*="mask-perspective"],
+body .callout[data-callout*="emboss-perspective"],
+body .callout[data-callout*="mask-seamless1"],
+body .callout[data-callout*="emboss-seamless1"],
+body .callout[data-callout*="mask-seamless2"],
+body .callout[data-callout*="emboss-seamless2"],
+body .callout[data-callout*="mask-border"],
+body .callout[data-callout*="emboss-border"],
+body .callout[data-callout*="mask-corner"],
+body .callout[data-callout*="emboss-corner"],
+body .callout[data-callout*="mask-space"],
+body .callout[data-callout*="emboss-space"],
+body .callout[data-callout*="mask-castle"],
+body .callout[data-callout*="emboss-castle"],
+body .callout[data-callout*="mask-artnouveau12"],
+body .callout[data-callout*="emboss-artnouveau12"],
+body .callout[data-callout*="mask-halftone"],
+body .callout[data-callout*="emboss-halftone"],
+body .callout[data-callout*="mask-dots"],
+body .callout[data-callout*="emboss-dots"],
+body .callout[data-callout*="mask-crying"],
+body .callout[data-callout*="emboss-crying"],
+body .callout[data-callout*="mask-flowers"],
+body .callout[data-callout*="emboss-flowers"],
+body .callout[data-callout*="mask-hand"],
+body .callout[data-callout*="emboss-hand"],
+body .callout[data-callout*="mask-compass"],
+body .callout[data-callout*="emboss-compass"],
+body .callout[data-callout*="mask-abstract"],
+body .callout[data-callout*="emboss-abstract"],
+.whim-mask-default {
+	-webkit-mask-size: 100% auto;
+}
+body .callout[data-callout*="small-mask"] {
+	-webkit-mask-size: 50%;
+}
+body .callout[data-callout*="big-mask"],
 .whim-mask-big {
 	-webkit-mask-size: 200%;
 }
@@ -4854,7 +5229,7 @@ body.whim-anim-zoom .workspace,
 }
 
 
-/* Misc */
+/* Misc/UI */
 
 .whim-fullwidth {
 	--file-line-width: 100%;
@@ -4873,6 +5248,9 @@ body.whim-anim-zoom .workspace,
 }
 .whim-unwhim-images img {
 	opacity: 1;
+}
+.whim-narrow {
+	max-width: 800px;
 }
 
 
@@ -5253,7 +5631,31 @@ body.whim-hue-shift-less, .theme-dark.whim-hue-shift-less, .theme-light.whim-hue
 	--strongest-shift-hue: -70;
 	--strongest-shift-hue-deg: -70deg;
 }
-/* This one doesn't have a snippet, because the snippets that might use it do something like it automatically. */
+/* koala */
+/* These don't have a snippet, because the snippets that might use it do something like it automatically. */
+
+body.whim-emboss-abstract-app,
+body.whim-emboss-compass-app,
+body.whim-emboss-hand-app,
+body.whim-emboss-flowers-app,
+body.whim-emboss-crying-app,
+body.whim-emboss-dots-app,
+body.whim-emboss-halftone-app,
+body.whim-emboss-artnouveau12-app,
+body.whim-emboss-castle-app,
+body.whim-emboss-space-app,
+body.whim-emboss-corner-app,
+body.whim-emboss-border-app,
+body.whim-emboss-seamless2-app,
+body.whim-emboss-seamless1-app,
+body.whim-emboss-perspective-app,
+body.whim-emboss-heron-app,
+body.whim-emboss-woman3-app,
+body.whim-emboss-artnouveau2-app,
+body.whim-emboss-woman1-app {
+    --background-primary: var(--bg-more-color);
+    --background-secondary: var(--bg-more-color);
+}
 body.whim-body-bg-color-override .workspace {
     --background-primary: var(--bg-color);
     --background-secondary: var(--bg-color);
@@ -5463,13 +5865,13 @@ settings:
                 value: default
             - 
                 label: Stars 1
-                value: whim-bg-image-stars1
+                value: whim-bg-image-stars1-app
             - 
                 label: Rainy 1
-                value: whim-bg-image-rainy1
+                value: whim-bg-image-rainy1-app
             - 
                 label: Rainy 2
-                value: whim-bg-image-rainy2
+                value: whim-bg-image-rainy2-app
     - 
         id: whim-bgl1mod-section-title
         title: BG Layer 1 - Modifiers
@@ -5856,7 +6258,150 @@ settings:
         type: heading
         level: 2
         collapsed: true
+    - 
+        id: whim-mask-setting
+        title: Mask & Emboss
+		description: Emboss options override the illustration/layer2 background and adjust the background color.
+        type: class-select
+        allowEmpty: false
+        default: default
+        options:
+            - 
+                label: Default
+                value: default
+            - 
+                label: scanlines
+                value: whim-mask-scanlines-app
+            - 
+                label: woman1
+                value: whim-mask-woman1-app
+            - 
+                label: woman1 (emboss)
+                value: whim-emboss-woman1-app
+            - 
+                label: artnouveau2
+                value: whim-mask-artnouveau2-app
+            - 
+                label: artnouveau2 (emboss)
+                value: whim-emboss-artnouveau2-app
+            - 
+                label: woman3
+                value: whim-mask-woman3-app
+            - 
+                label: woman3 (emboss)
+                value: whim-emboss-woman3-app
+            - 
+                label: heron
+                value: whim-mask-heron-app
+            - 
+                label: heron (emboss)
+                value: whim-emboss-heron-app
+            - 
+                label: perspective
+                value: whim-mask-perspective-app
+            - 
+                label: perspective (emboss)
+                value: whim-emboss-perspective-app
+            - 
+                label: seamless1
+                value: whim-mask-seamless1-app
+            - 
+                label: seamless1 (emboss)
+                value: whim-emboss-seamless1-app
+            - 
+                label: seamless2
+                value: whim-mask-seamless2-app
+            - 
+                label: seamless2 (emboss)
+                value: whim-emboss-seamless2-app
+            - 
+                label: border
+                value: whim-mask-border-app
+            - 
+                label: border (emboss)
+                value: whim-emboss-border-app
+            - 
+                label: corner
+                value: whim-mask-corner-app
+            - 
+                label: corner (emboss)
+                value: whim-emboss-corner-app
+            - 
+                label: space
+                value: whim-mask-space-app
+            - 
+                label: space (emboss)
+                value: whim-emboss-space-app
+            - 
+                label: castle
+                value: whim-mask-castle-app
+            - 
+                label: castle (emboss)
+                value: whim-emboss-castle-app
+            - 
+                label: artnouveau12
+                value: whim-mask-artnouveau12-app
+            - 
+                label: artnouveau12 (emboss)
+                value: whim-emboss-artnouveau12-app
+            - 
+                label: halftone
+                value: whim-mask-halftone-app
+            - 
+                label: halftone (emboss)
+                value: whim-emboss-halftone-app
+            - 
+                label: dots
+                value: whim-mask-dots-app
+            - 
+                label: dots (emboss)
+                value: whim-emboss-dots-app
+            - 
+                label: crying
+                value: whim-mask-crying-app
+            - 
+                label: crying (emboss)
+                value: whim-emboss-crying-app
+            - 
+                label: flowers
+                value: whim-mask-flowers-app
+            - 
+                label: flowers (emboss)
+                value: whim-emboss-flowers-app
+            - 
+                label: hand
+                value: whim-mask-hand-app
+            - 
+                label: hand (emboss)
+                value: whim-emboss-hand-app
+            - 
+                label: compass
+                value: whim-mask-compass-app
+            - 
+                label: compass (emboss)
+                value: whim-emboss-compass-app
+            - 
+                label: abstract
+                value: whim-mask-abstract-app
+            - 
+                label: abstract (emboss)
+                value: whim-emboss-abstract-app
+    - 
+        id: whim-mask-position-setting
+        title: Position
+        type: class-select
+        allowEmpty: false
+        default: default
+        options:
+            - 
+                label: Default
+                value: default
+	-
+        id: whim-mask-no-repeat
+        title: No Repeat
+        type: class-toggle
 
 */
+/* koala */
 
 /* TODO TEMP ctrl-f hook panda */
