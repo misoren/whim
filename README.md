@@ -1,12 +1,16 @@
 # Welcome to Whim!
-
+---
 ![basic whim](screenshots/whim.png)
 > Vanilla Whim
-
+---
+![basic whim](screenshots/whim5.png)
+> Whim dressed up
+---
 ![basic whim](screenshots/whim2.png)
 ![basic whim](screenshots/whim3.png)
 ![basic whim](screenshots/whim4.png)
 > Whim that has been training for 1000 years (in three accent color examples)
+---
 
 # Overview
 - **For people who love colors** 🌈
