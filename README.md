@@ -33,7 +33,10 @@
 - **Desktop first** 🖥️
 	- I use Obsidian mobile regularly, but this theme was not built for mobile use in particular, and mobile use hasn't been tested much yet. In my experience, this theme is *usable* on mobile, but many of its more fun features do not work properly.
 - **Large (~15mb last I checked)** 💪
-
+---
+![basic whim](screenshots/whim6.png)
+> Whim of two worlds: the future (simple scanline effect) and the past (combo embossing effect)
+---
 # Features
 - **MANY CSS classes**
 	- Like, so many. This theme aspires to have a whole taxonomy for you to apply at will to your cssclasses note property
