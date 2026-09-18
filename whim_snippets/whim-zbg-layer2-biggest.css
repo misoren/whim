@@ -1,4 +1,3 @@
-.theme-dark .workspace {
+.theme-light .workspace, .theme-dark .workspace {
 	background-size: 400%;
-	background-position: 50% 50%;
 }

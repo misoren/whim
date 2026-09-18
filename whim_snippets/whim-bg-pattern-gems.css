@@ -1,0 +1,36 @@
+.theme-dark .workspace, .theme-light .workspace {
+	--gemt: 90%;
+	--gemw: 200px;
+	--gemh: 200px;
+	background: 
+		linear-gradient(
+			135deg,
+			var(--nbg-solid-color),
+			color-mix(in srgb, var(--dw), transparent 20%)
+		),
+		repeating-conic-gradient(
+			from 98deg,
+			color-mix(in srgb, var(--nbg-draw-color), transparent var(--gemt)) 0%, 
+			var(--nbg-solid-color) 85%
+		)
+		content-box border-box 0% 0% / var(--gemw) var(--gemh) repeat, 
+		repeating-conic-gradient(
+			from 188deg,
+			color-mix(in srgb, var(--nbg-draw-color), transparent var(--gemt)) 0%, 
+			var(--nbg-solid-color) 85%
+		)
+		content-box border-box 0% 0% / var(--gemw) var(--gemh) repeat, 
+		repeating-conic-gradient(
+			from -80deg,
+			color-mix(in srgb, var(--nbg-draw-color), transparent var(--gemt)) 0%, 
+			color-mix(in srgb, var(--dcon), transparent var(--gemt)) 85%
+		)
+		content-box border-box 0% 0% / var(--gemw) var(--gemh) repeat, 
+		repeating-conic-gradient(
+			from 9deg,
+			color-mix(in srgb, var(--nbg-draw-color), transparent var(--gemt)) 0%,
+			color-mix(in srgb, var(--con), transparent var(--gemt)) 85%
+		)
+		content-box border-box 0% 0% / var(--gemw) var(--gemh) repeat
+		;
+}

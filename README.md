@@ -66,12 +66,15 @@
 ---
 ![checkboxes](images/checkboxes.png)
 ---
-- **Does not use Style Settings** (or any other plugins)
-	- As a personal user, I love Style Settings. But this theme was also made with plugins-off users in mind, e.g., me at work. I might add Style Settings support in the future? But if I do update this theme in the future, I hope to do so with a vanilla Obsidian experience in mind first.
+- **Style Settings = snippets**
+	- As a personal user, I love Style Settings. But this theme was also made with plugins-off users in mind, e.g., me at work. I've endeavored to make everything you can do in Style Settings with this theme available via snippets as well.
 - *OPTIONAL*: **Several snippets available for this theme**
 	- Most won't work with other themes, but some might!
     - Includes whole-app background alternatives and animations, including some backgrounds that layer (e.g., image and pattern backgrounds generally layer with each other)
-- *DOCUMENTATION*: **There's an examples folder.**
+- *DOCUMENTATION*: There's an [examples](docs/examples/) folder and sections documenting available cssclasses, etc., in the [docs](docs/) folder.
+	- [cssclasses](docs/docs/)
+	- [callouts](docs/docs/)
+	- [snippets](docs/docs/)
 - *OTHER STUFF*
 	- Embedded notes are borderless and titleless
 	- Bold, italics, strikethrough, and highlight are colorful
@@ -101,7 +104,6 @@ The themes Minimal, Nebulux, and Fancy-a-story were useful points of reference/e
 - *MAYBE*: More callout styles, note cssclasses, junk like that
 - *MAYBE*: More snippets
 - *VERY MAYBE*: Improve light mode
-- *VERY MAYBE*: Style Settings support
 - *VERY MAYBE*: Canvas stuff
 - *VERY MAYBE*: Graph stuff?
 - *VERY MAYBE*: Support for some popular plugins

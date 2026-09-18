@@ -12,14 +12,14 @@ body .callout[data-callout*="teaparty"]  {
 	background-repeat: repeat;
 }
 
-.nborder-teaparty {
+.whim-border-teaparty {
 	border-style: solid;
 	border-width: 10px;
 	border-color: color-mix(in srgb, white, transparent 70%);
 	border-image: var(--gdj-teaparty) 20;
 }
 
-.nborder-teaparty-layer { 
+.whim-border-teaparty-layer { 
 	border-style: solid;
 	border-width: 1px;
 	border-color: color-mix(in srgb, white, transparent 70%);
@@ -29,26 +29,26 @@ body .callout[data-callout*="teaparty"]  {
 	border-image-repeat: repeat;
 }
 
-.nhr-teaparty {
+.whim-hr-teaparty {
 	--hr-svg: var(--gdj-teaparty);
 }
 
-.nbg-stamp-teaparty {
+.whim-bg-stamp-teaparty {
 	--stamp-svg: var(--gdj-teaparty);
 }
 
-.nmask-teaparty {
+.whim-mask-teaparty {
 	-webkit-mask-image: var(--gdj-teaparty), radial-gradient(black 50%, color-mix(in srgb, black, transparent 65%) 70%, color-mix(in srgb, black, transparent 100%) 90%);
 }
-.nmask-teaparty-less {
+.whim-mask-teaparty-less {
 	-webkit-mask-image: var(--gdj-teaparty), radial-gradient(black 50%, color-mix(in srgb, black, transparent 50%) 70%);
 }
-.nmask-teaparty-fade {
+.whim-mask-teaparty-fade {
 	-webkit-mask-image: var(--gdj-teaparty), linear-gradient(black 65%, transparent 90%);
 }
-.nmask-teaparty-fademore {
+.whim-mask-teaparty-fademore {
 	-webkit-mask-image: var(--gdj-teaparty), linear-gradient(black 35%, transparent 65%);
 }
-.nmask-teaparty-simple {
+.whim-mask-teaparty-simple {
 	-webkit-mask-image: var(--gdj-teaparty), linear-gradient(color-mix(in srgb, black, transparent 25%) 25%, color-mix(in srgb, black, transparent 50%) 75%);
 }

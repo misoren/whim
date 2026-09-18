@@ -12,14 +12,14 @@ body .callout[data-callout*="oaktree"]  {
 	background-repeat: repeat;
 }
 
-.nborder-oaktree {
+.whim-border-oaktree {
 	border-style: solid;
 	border-width: 10px;
 	border-color: color-mix(in srgb, white, transparent 70%);
 	border-image: var(--gdj-oaktree) 20;
 }
 
-.nborder-oaktree-layer { 
+.whim-border-oaktree-layer { 
 	border-style: solid;
 	border-width: 1px;
 	border-color: color-mix(in srgb, white, transparent 70%);
@@ -29,26 +29,26 @@ body .callout[data-callout*="oaktree"]  {
 	border-image-repeat: repeat;
 }
 
-.nhr-oaktree {
+.whim-hr-oaktree {
 	--hr-svg: var(--gdj-oaktree);
 }
 
-.nbg-stamp-oaktree {
+.whim-bg-stamp-oaktree {
 	--stamp-svg: var(--gdj-oaktree);
 }
 
-.nmask-oaktree {
+.whim-mask-oaktree {
 	-webkit-mask-image: var(--gdj-oaktree), radial-gradient(black 50%, color-mix(in srgb, black, transparent 65%) 70%, color-mix(in srgb, black, transparent 100%) 90%);
 }
-.nmask-oaktree-less {
+.whim-mask-oaktree-less {
 	-webkit-mask-image: var(--gdj-oaktree), radial-gradient(black 50%, color-mix(in srgb, black, transparent 50%) 70%);
 }
-.nmask-oaktree-fade {
+.whim-mask-oaktree-fade {
 	-webkit-mask-image: var(--gdj-oaktree), linear-gradient(black 65%, transparent 90%);
 }
-.nmask-oaktree-fademore {
+.whim-mask-oaktree-fademore {
 	-webkit-mask-image: var(--gdj-oaktree), linear-gradient(black 35%, transparent 65%);
 }
-.nmask-oaktree-simple {
+.whim-mask-oaktree-simple {
 	-webkit-mask-image: var(--gdj-oaktree), linear-gradient(color-mix(in srgb, black, transparent 25%) 25%, color-mix(in srgb, black, transparent 50%) 75%);
 }

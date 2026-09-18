@@ -1,0 +1,4 @@
+body {
+	--divider-color: color-mix(in srgb, var(--whim-color), transparent 75%);
+    --divider-width: 2px;
+}

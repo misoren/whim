@@ -1,0 +1,9 @@
+.theme-dark .workspace, .theme-light .workspace {
+	background: repeating-radial-gradient(
+		circle,
+		color-mix(in srgb, var(--nbg-draw-color), transparent 80%) 0 3px,
+		var(--nbg-solid-color) 3px 110px
+		)
+		content-box border-box 0% 0% / 200px 200px repeat;
+	background-position: 50% 30%;
+}

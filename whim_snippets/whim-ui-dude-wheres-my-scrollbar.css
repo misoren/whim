@@ -1,0 +1,3 @@
+.theme-dark, .theme-light {
+	--scrollbar-thumb-bg: color-mix(in srgb, var(--whim-color), transparent 75%);
+}

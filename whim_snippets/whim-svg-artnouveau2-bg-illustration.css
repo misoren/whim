@@ -1,0 +1,8 @@
+body {
+    --background-primary: var(--bg-color);
+    --background-secondary: var(--bg-color);
+}
+
+.theme-dark .workspace {
+	background: var(--gdj-artnouveau2);
+}

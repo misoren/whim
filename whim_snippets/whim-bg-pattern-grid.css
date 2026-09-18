@@ -1,0 +1,7 @@
+.theme-dark .workspace, .theme-light .workspace {
+	--grid-line-color: color-mix(in srgb, var(--nbg-draw-color), transparent 85%);
+	background: 
+		repeating-linear-gradient(90deg, var(--nbg-solid-color), var(--nbg-solid-color) 30px, var(--grid-line-color) 30px, var(--grid-line-color) 32px),
+		repeating-linear-gradient(0deg, var(--nbg-solid-color), var(--nbg-solid-color) 30px, var(--grid-line-color) 30px, var(--grid-line-color) 32px);
+	background-position: 50% 50%;
+}

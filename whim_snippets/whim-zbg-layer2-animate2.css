@@ -1,0 +1,4 @@
+
+.theme-light .workspace, .theme-dark .workspace {
+    animation: gradient 240s ease infinite;
+}

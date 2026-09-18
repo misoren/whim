@@ -1,0 +1,8 @@
+body {
+    --background-primary: var(--bg-color);
+    --background-secondary: var(--bg-color);
+}
+
+.theme-light .workspace, .theme-dark .workspace {
+    background-image: var(--masks-icon-bg);
+}

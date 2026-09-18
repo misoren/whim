@@ -12,18 +12,18 @@ body .callout[data-callout*="artnouveau8"]  {
 	background-repeat: repeat;
 }
 
-.nbg-stamp-artnouveau8 {
+.whim-bg-stamp-artnouveau8 {
 	--stamp-svg: var(--gdj-artnouveau8);
 }
 
-.nborder-artnouveau8 {
+.whim-border-artnouveau8 {
 	border-style: solid;
 	border-width: 10px;
 	border-color: color-mix(in srgb, white, transparent 70%);
 	border-image: var(--gdj-artnouveau8) 20;
 }
 
-.nborder-artnouveau8-layer { 
+.whim-border-artnouveau8-layer { 
 	border-style: solid;
 	border-width: 1px;
 	border-color: color-mix(in srgb, white, transparent 70%);
@@ -33,22 +33,22 @@ body .callout[data-callout*="artnouveau8"]  {
 	border-image-repeat: repeat;
 }
 
-.nhr-artnouveau8 {
+.whim-hr-artnouveau8 {
 	--hr-svg: var(--gdj-artnouveau8);
 }
 
-.nmask-artnouveau8 {
+.whim-mask-artnouveau8 {
 	-webkit-mask-image: var(--gdj-artnouveau8), radial-gradient(black 50%, color-mix(in srgb, black, transparent 65%) 70%, color-mix(in srgb, black, transparent 100%) 90%);
 }
-.nmask-artnouveau8-less {
+.whim-mask-artnouveau8-less {
 	-webkit-mask-image: var(--gdj-artnouveau8), radial-gradient(black 50%, color-mix(in srgb, black, transparent 50%) 70%);
 }
-.nmask-artnouveau8-fade {
+.whim-mask-artnouveau8-fade {
 	-webkit-mask-image: var(--gdj-artnouveau8), linear-gradient(black 65%, transparent 90%);
 }
-.nmask-artnouveau8-fademore {
+.whim-mask-artnouveau8-fademore {
 	-webkit-mask-image: var(--gdj-artnouveau8), linear-gradient(black 35%, transparent 65%);
 }
-.nmask-artnouveau8-simple {
+.whim-mask-artnouveau8-simple {
 	-webkit-mask-image: var(--gdj-artnouveau8), linear-gradient(color-mix(in srgb, black, transparent 25%) 25%, color-mix(in srgb, black, transparent 50%) 75%);
 }

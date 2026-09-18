@@ -12,14 +12,14 @@ body .callout[data-callout*="flower"]  {
 	background-repeat: repeat;
 }
 
-.nborder-flower {
+.whim-border-flower {
 	border-style: solid;
 	border-width: 10px;
 	border-color: color-mix(in srgb, white, transparent 70%);
 	border-image: var(--gdj-flower) 20;
 }
 
-.nborder-flower-layer { 
+.whim-border-flower-layer { 
 	border-style: solid;
 	border-width: 1px;
 	border-color: color-mix(in srgb, white, transparent 70%);
@@ -29,27 +29,27 @@ body .callout[data-callout*="flower"]  {
 	border-image-repeat: repeat;
 }
 
-.nhr-flower {
+.whim-hr-flower {
 	--hr-svg: var(--gdj-flower);
 }
 
 
-.nbg-stamp-flower {
+.whim-bg-stamp-flower {
 	--stamp-svg: var(--gdj-flower);
 }
 
-.nmask-flower {
+.whim-mask-flower {
 	-webkit-mask-image: var(--gdj-flower), radial-gradient(black 50%, color-mix(in srgb, black, transparent 65%) 70%, color-mix(in srgb, black, transparent 100%) 90%);
 }
-.nmask-flower-less {
+.whim-mask-flower-less {
 	-webkit-mask-image: var(--gdj-flower), radial-gradient(black 50%, color-mix(in srgb, black, transparent 50%) 70%);
 }
-.nmask-flower-fade {
+.whim-mask-flower-fade {
 	-webkit-mask-image: var(--gdj-flower), linear-gradient(black 65%, transparent 90%);
 }
-.nmask-flower-fademore {
+.whim-mask-flower-fademore {
 	-webkit-mask-image: var(--gdj-flower), linear-gradient(black 35%, transparent 65%);
 }
-.nmask-flower-simple {
+.whim-mask-flower-simple {
 	-webkit-mask-image: var(--gdj-flower), linear-gradient(color-mix(in srgb, black, transparent 25%) 25%, color-mix(in srgb, black, transparent 50%) 75%);
 }
