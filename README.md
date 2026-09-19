@@ -106,7 +106,17 @@
 	- [callouts](docs/examples/callouts.md)
 	- [checkboxes](docs/examples/checkboxes.md)
 	- [snippets](docs/snippets.md)
-	- 
+	- There's markdown files formatted for Obsidian cssclasses lists titled "whim note with every...". If you drop these files in your vault, then the whim options can be autosuggested in the cssclasses property field.
+---
+![new tab](screenshots/new tab.png)
+> New tab
+---
+![base](screenshots/base.png)
+> A base
+---
+![stuff](images/stuff.png)
+> Other stuff
+---
 - *OTHER STUFF*
 	- Embedded notes are borderless and titleless
 	- Bold, italics, strikethrough, and highlight are colorful
@@ -114,10 +124,10 @@
 	- Different heading colors using the dynamic palette
 - **No AI involvement**
 	- I crafted this CSS the old-fashioned way: writing and rewriting my own amateur CSS, with frequent lookin' up of stuff on the internet. As far as I know, none of the images and SVGs included in the theme proper or in the snippets folder were created with or modified by AI.
-
+---
 ![blaaa](images/blaaa.png)
 > Whim's creation
-
+---
 # Themes I like that you might like
 I made Whim for my own use, but if I didn't, I'd be using one of these:
 - Fancy-a-story
