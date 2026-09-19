@@ -1,0 +1,11 @@
+.theme-dark .workspace, .theme-light .workspace {
+	--nett: 75%;
+	--netsize: 240px;
+	--netsizewidth: 242px;
+	background: 
+		repeating-linear-gradient(45deg, var(--nbg-solid-color), var(--nbg-solid-color) var(--netsize), color-mix(in srgb, var(--nbg-draw-color), transparent var(--nett)) var(--netsize), color-mix(in srgb, var(--nbg-draw-color), transparent var(--nett)) var(--netsizewidth)),
+		repeating-linear-gradient(135deg, var(--nbg-solid-color), var(--nbg-solid-color) var(--netsize), color-mix(in srgb, var(--nbg-draw-color), transparent var(--nett)) var(--netsize), color-mix(in srgb, var(--nbg-draw-color), transparent var(--nett)) var(--netsizewidth))
+		;
+	background-position: 50% 50%;
+    background-attachment: fixed;
+}
