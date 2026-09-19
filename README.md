@@ -108,7 +108,7 @@
 	- [snippets](docs/snippets.md)
 	- There's markdown files formatted for Obsidian cssclasses lists titled "whim note with every...". If you drop these files in your vault, then the whim options can be autosuggested in the cssclasses property field.
 ---
-![new tab](screenshots/new tab.png)
+![new tab](screenshots/new_tab.png)
 > New tab
 ---
 ![base](screenshots/base.png)
