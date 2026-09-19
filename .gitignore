@@ -12,3 +12,5 @@ node_modules
 .DS_Store
 DefaultGuide_README.md
 todo.md
+src/*
+/.editorconfig
