@@ -4228,12 +4228,14 @@ body .callout[data-callout*="emboss-abstract"],
 .whim-mask-default {
 	-webkit-mask-position: calc(50% + 2px) 3px;
 }
+body.whim-mask-center-app .workspace,
 .whim-mask-center {
 	-webkit-mask-position: center;
 }
 
 /* koala */
 /* mask center position */
+body.whim-mask-askew-center .workspace,
 body.whim-emboss-woman1-app .workspace,
 body.whim-emboss-artnouveau2-app .workspace,
 body.whim-emboss-woman3-app .workspace,
@@ -4367,13 +4369,21 @@ body .callout[data-callout*="emboss-abstract"],
 .whim-mask-default {
 	-webkit-mask-size: 100% auto;
 }
+body.whim-mask-small .workspace,
 body .callout[data-callout*="small-mask"] {
 	-webkit-mask-size: 50%;
 }
+body.whim-mask-bit-bigger .workspace,
+body .callout[data-callout*="bit-bigger-mask"],
+.whim-mask-bit-bigger {
+	-webkit-mask-size: 150%;
+}
+body.whim-mask-big .workspace,
 body .callout[data-callout*="big-mask"],
 .whim-mask-big {
 	-webkit-mask-size: 200%;
 }
+body.whim-mask-bigger .workspace,
 .whim-mask-bigger {
 	-webkit-mask-size: 300%;
 }
@@ -6397,6 +6407,31 @@ settings:
             - 
                 label: Default
                 value: default
+            - 
+                label: Center
+                value: whim-mask-center-app
+            - 
+                label: Askew Center
+                value: whim-mask-askew-center
+    - 
+        id: whim-mask-size-setting
+        title: Size
+        type: class-select
+        allowEmpty: false
+        default: default
+        options:
+            - 
+                label: Default
+                value: default
+            - 
+                label: Bit Bigger
+                value: whim-mask-bit-bigger
+            - 
+                label: Big
+                value: whim-mask-big
+            - 
+                label: Bigger
+                value: whim-mask-bigger
 	-
         id: whim-mask-no-repeat
         title: No Repeat

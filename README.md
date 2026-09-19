@@ -1,5 +1,8 @@
 # Welcome to Whim!
 ---
+![elegant whim](screenshots/whim0.png)
+> This is a note made purely from elements included with Whim.
+---
 ![basic whim](screenshots/whim.png)
 > Vanilla Whim
 ---
@@ -9,25 +12,10 @@
 ![cute whim](screenshots/whim7.png)
 > Whim with a cute note (snippets-or-Style Settings must be used for some of what's pictured for cuteness)
 ---
-![powerful whim 1](screenshots/whim2.png)
-![powerful whim 2](screenshots/whim3.png)
-![powerful whim 3](screenshots/whim4.png)
-> Whim that has been training for 1000 years (in three accent color examples)
----
-![space whim](screenshots/whim8.png)
-> Whim thinking about space (snippets-or-Style Settings must be used for some of what's pictured for cuteness)
----
-![vintage whim]
-> TODO: Whim feeling old-fashioned
----
-![pop whim]
-> TODO: Whim influenced by pop art
----
-
 # Overview
 - **For people who love colors** 🌈
 	- Pick an accent color -> get a colorful theme with your chosen accent color as the primary color and a contrasting color for accents.
-		- If you pick a low-saturation or dark color, the resulting palette won't be THAT colorful. It's up to you!
+		- If you pick a low-saturation or dark color, the resulting palette won't be THAT colorful. And there's snippets/settings/cssclasses for making things grayer. It's up to you!
 	- This doesn't use any specific, pre-documented way to choose colors that go well with the chosen accent color. I just eyeballed what looked good enough to me.
 		- One optional snippet shifts the hues in the opposite direction from the accent color as the default theme approach.
 		- Another optional snippet shifts the hues less.
@@ -48,6 +36,20 @@
 ---
 ![basic whim](screenshots/whim6.png)
 > Whim of two worlds: the future (simple scanline effect) and the past (combo embossing effect)
+---
+![space whim](screenshots/whim8.png)
+> Whim thinking about space (snippets-or-Style Settings must be used for some of what's pictured for space thoughts)
+---
+![powerful whim 1](screenshots/whim2.png)
+![powerful whim 2](screenshots/whim3.png)
+![powerful whim 3](screenshots/whim4.png)
+> Whim that has been training for 1000 years (in three accent color examples)
+---
+![vintage whim](screenshots/whim9.png)
+> TODO: Whim feeling old-fashioned
+---
+![pop whim](screenshots/whim10.png)
+> TODO: Whim influenced by pop art
 ---
 # Features
 - **MANY CSS classes**
@@ -82,8 +84,9 @@
 	- As a personal user, I love Style Settings. But this theme was also made with plugins-off users in mind, e.g., me at work. I've endeavored to make nearly everything you can do in Style Settings with this theme available via snippets as well.
 		- An exception to this currently is the mask/"emboss" setting in Style Settings.
 - *OPTIONAL*: **Several snippets available for this theme**
-	- Most won't work with other themes, but some might!
-    - Includes whole-app background alternatives and animations, including some backgrounds that layer (e.g., image and pattern backgrounds generally layer with each other)
+	- Many won't work with other themes, but some might!
+    - Includes whole-app background alternatives and animations, including some backgrounds that layer (e.g., image and pattern backgrounds generally layer with each other, with the pattern overlaying the image)
+	- Many snippets are equivalent to Style Setting options, but some offer additional SVG illustrations not included in the main theme, to keep the theme.css file size at least a *little* smaller...
 - *DOCUMENTATION*: There's an [examples](docs/examples/) folder and sections documenting available cssclasses, etc., in the [docs](docs/) folder.
 	- [cssclasses](docs/docs/)
 	- [callouts](docs/docs/)
@@ -94,9 +97,10 @@
         - ...at least in the main note body, in edit mode...other contexts' may not be yet.
 	- Different heading colors using the dynamic palette
 - **No AI involvement**
-	- I crafted this CSS the old-fashioned way: copying and pasting from other sources and tweaking with my own two hands. As far as I know, none of the images and SVGs included in the theme proper or in the snippets folder were created or edited with AI.
+	- I crafted this CSS the old-fashioned way: writing and rewriting my own amateur CSS, with frequent lookin' up of stuff on the internet. As far as I know, none of the images and SVGs included in the theme proper or in the snippets folder were created with or modified by AI.
 
 ![blaaa](images/blaaa.png)
+> Whim's creation
 
 # Themes I like that you might like
 I made Whim for my own use, but if I didn't, I'd be using one of these:
