@@ -1815,6 +1815,9 @@ body .callout[data-callout*="font-glassantiqua"] {
 body .callout[data-callout*="font-orbitron"] {
 	font-family: 'Orbitron';
 }
+body .callout[data-callout*="font-size-20"] {
+	font-size: 20px;
+}
 
 /* Final callout styling */
 .callout {
@@ -2959,6 +2962,8 @@ li[data-task="`"] > p > input:checked {
 .whim-cutout {
 	box-shadow: inset 20px 20px 20px 20px rgba(0, 0, 0, 0.2);
 }
+
+/* elephant */
 
 /* BG colors, patterns, and images */
 

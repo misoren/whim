@@ -103,9 +103,10 @@
     - Includes whole-app background alternatives and animations, including some backgrounds that layer (e.g., image and pattern backgrounds generally layer with each other, with the pattern overlaying the image)
 	- Many snippets are equivalent to Style Setting options, but some offer additional SVG illustrations not included in the main theme, to keep the theme.css file size at least a *little* smaller...
 - *DOCUMENTATION*: There's an [examples](docs/examples/) folder and sections documenting available cssclasses, etc., in the [docs](docs/) folder.
-	- [cssclasses](docs/docs/)
-	- [callouts](docs/docs/)
-	- [snippets](docs/docs/)
+	- [callouts](docs/examples/callouts.md)
+	- [checkboxes](docs/examples/checkboxes.md)
+	- [snippets](docs/snippets.md)
+	- 
 - *OTHER STUFF*
 	- Embedded notes are borderless and titleless
 	- Bold, italics, strikethrough, and highlight are colorful
