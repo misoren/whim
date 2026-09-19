@@ -1,0 +1,27 @@
+---
+cssclasses:
+  - whim-header-glow
+  - whim-font-jacquarda9
+  - whim-font-jacquard12
+  - whim-font-eagleLake
+  - whim-font-fredericka
+  - whim-font-metamorphous
+  - whim-font-christmas
+  - whim-font-stalemate
+  - whim-font-unifraktur
+  - whim-font-windSong
+  - whim-font-almendra
+  - whim-font-silkscreen
+  - whim-font-specialElite
+  - whim-font-orbitron
+  - whim-font-glassAntiqua
+  - whim-font-body-size-12
+  - whim-font-body-size-16
+  - whim-font-body-size-20
+  - whim-font-body-size-24
+  - whim-font-faculty
+  - whim-font-specialElite
+  - whim-font-silkscreen
+  - whim-font-glassAntiqua
+  - whim-font-orbitron
+---

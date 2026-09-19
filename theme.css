@@ -869,7 +869,7 @@ img:hover {
 ##############################################################
 ##############################################################
 # 
-# Horizontal Rules
+# Horizontal rule note classes
 #
 ##############################################################
 ##############################################################
@@ -3172,8 +3172,8 @@ body.whim-bg-gems .workspace, .whim-bg-gems {
 		;
 }
 
+
 /* illustration BGs */
-/* koala */
 body.whim-bg-stamp-woman1 .workspace, 
 body.whim-emboss-woman1-app .workspace,
 .whim-emboss-woman1,
@@ -3434,7 +3434,6 @@ body.whim-bg-stamp-magic .workspace,
 .whim-emboss-compass,
 .whim-emboss-abstract,
 /* emboss app classes */
-/* koala */
 body.whim-emboss-woman1-app .workspace,
 body.whim-emboss-artnouveau2-app .workspace,
 body.whim-emboss-woman3-app .workspace,
@@ -3505,7 +3504,6 @@ body.whim-bg-biggest .workspace,
 .whim-bg-biggest {
 	background-size: 400%;
 }
-/* koala */
 body.whim-emboss-abstract-app .workspace,
 body.whim-emboss-compass-app .workspace,
 body.whim-emboss-hand-app .workspace,
@@ -3552,7 +3550,6 @@ body.whim-bg-comfy .workspace,
 }
 
 /* BG center position */
-/* koala */
 body.whim-emboss-woman1-app .workspace,
 body.whim-emboss-artnouveau2-app .workspace,
 body.whim-emboss-woman3-app .workspace,
@@ -3826,7 +3823,6 @@ body.whim-mask-scanlines-app .workspace,
 .whim-mask-woman1-fademore {
 	-webkit-mask-image: var(--gdj-woman1), linear-gradient(black 35%, transparent 65%);
 }
-/* koala */
 body.whim-mask-woman1-app .workspace,
 body.whim-emboss-woman1-app .workspace,
 body .callout[data-callout*="mask-woman1"],
@@ -4197,15 +4193,11 @@ body .callout[data-callout*="emboss-abstract"],
 }
 
 
-.whim-mask-default {
-	-webkit-mask-position: calc(50% + 2px) 3px;
-}
 body.whim-mask-center-app .workspace,
 .whim-mask-center {
 	-webkit-mask-position: center;
 }
 
-/* koala */
 /* mask center position */
 body.whim-mask-askew-center .workspace,
 body.whim-emboss-woman1-app .workspace,
@@ -5614,7 +5606,7 @@ body.whim-hue-shift-less, .theme-dark.whim-hue-shift-less, .theme-light.whim-hue
 	--strongest-shift-hue: -70;
 	--strongest-shift-hue-deg: -70deg;
 }
-/* koala */
+
 /* These don't have a snippet, because the snippets that might use it do something like it automatically. */
 
 body.whim-emboss-abstract-app,
@@ -5713,8 +5705,6 @@ body.whim-ui-more-dividers {
 body.whim-ui-fewer-dividers {
 	--tab-outline-color: transparent;
 }
-
-/* TODO TEMP ctrl-f hook panda */
 
 /* @settings
 
@@ -6413,6 +6403,3 @@ settings:
         type: class-toggle
 
 */
-/* koala */
-
-/* TODO TEMP ctrl-f hook panda */

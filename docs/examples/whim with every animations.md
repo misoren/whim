@@ -1,0 +1,21 @@
+---
+cssclasses:
+  - whim-bg-solid
+  - whim-color-more
+  - whim-mask-big
+  - whim-color-whim
+  - whim-bg-net
+  - whim-mask-compass-simple
+  - whim-mask-center
+  - whim-anim-mask-hypno
+  - whim-anim-mask-zoom
+  - whim-anim-mask-shift
+  - whim-anim-basicgradient
+  - whim-anim-slowgradient
+  - whim-anim-hypno
+  - whim-anim-playagate
+  - whim-anim-slow
+  - whim-anim-drift
+  - whim-anim-zoom
+  - whim-anim-rotisserie
+---
