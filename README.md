@@ -46,10 +46,10 @@
 > Whim that has been training for 1000 years (in three accent color examples)
 ---
 ![vintage whim](screenshots/whim9.png)
-> TODO: Whim feeling old-fashioned
+> Whim feeling old-fashioned, or perhaps in half-mourning
 ---
 ![pop whim](screenshots/whim10.png)
-> TODO: Whim influenced by pop art
+> Whim influenced by pop art
 ---
 # Features
 - **MANY CSS classes**
@@ -73,12 +73,26 @@
 			- * only spins the note for even cooking, no chickens harmed or rotated
 - **New callout types**
 	- Many new "content" callout types (like "place", "chef", and "ugh") and "style" callout types (like "rainbow" and a selection of SVG illustrations)
-- **Some callout property things**
-	- Just drop the extra property strings into the callout type bit, like turn "[!note]" into "[!note.readout.white_text]" to apply the mysterious properties "readout" and "white_text"
+	- I'm probably not going to keep these images up-to-date if I add more, so check the docs for a full list! Or if the docs aren't updated, then...read the theme.css. :-)
+---
+![default callouts](images/default_callouts.png)
+> The default callouts
+---
+![default callouts](images/custom_callouts.png)
+> The custom callouts
+---
+- **Callout modifiers/properties/"classes"**
+	- Just drop the extra property strings into the callout type bit--like turn "[!note]" into "[!note.readout.white_text]" to apply the mysterious properties "readout" and "white_text"
+---
+![callout style](images/callout_styles.png)
+> A few examples of extra callout modifiers/styles/properties/whatever
+---
 - **More checkbox states than you'll be likely to use**
 	- There's over 80, including things like a cat, a UFO, and a donut.
+	- I'm probably not going to keep this image up-to-date if I add more, so check the docs for a full list! Or if the docs aren't updated, then...read the theme.css. :-)
 ---
 ![checkboxes](images/checkboxes.png)
+> The many checkboxes of Whim
 ---
 - **Style Settings = snippets**
 	- As a personal user, I love Style Settings. But this theme was also made with plugins-off users in mind, e.g., me at work. I've endeavored to make nearly everything you can do in Style Settings with this theme available via snippets as well.
