@@ -1,7 +1,8 @@
 # Welcome to Whim!
 ---
 ![elegant whim](screenshots/whim0.png)
-> This is a note made purely from elements included with Whim.
+> This is a note made purely from elements included within Whim.
+> (Vector images pictured are from user GDJ on pixabay.)
 ---
 ![basic whim](screenshots/whim.png)
 > Vanilla Whim
@@ -72,7 +73,7 @@
 		- Spinning chicken* mode
 			- * only spins the note for even cooking, no chickens harmed or rotated
 - **New callout types**
-	- Many new "content" callout types (like "place", "chef", and "ugh") and "style" callout types (like "rainbow" and a selection of SVG illustrations)
+	- Many new "content" callout types (like "place", "chef", and "ugh")
 	- I'm probably not going to keep these images up-to-date if I add more, so check the docs for a full list! Or if the docs aren't updated, then...read the theme.css. :-)
 ---
 ![default callouts](images/default_callouts.png)
