@@ -5,7 +5,7 @@
 # 
 # "Whim", an Obsidian theme, by misoren
 # No AI used in the creation of this style
-# Some amount of shameless copy-paste used in the creation of this style
+# Some amount of shameless copy-paste from w3schools/MDN/kepano used in the creation of this style
 #
 ##############################################################
 ##############################################################
@@ -24,11 +24,9 @@ TODO:
 	- [ ] Update from the README source notes
 	- [ ] Add note: blend-blurs are not compatible with masks or these cssclasses may behave unexpectedly with each other
 
-- [ ] Add examples to the folder
-	- [ ] Add new all-the-notes note
-
-- [ ] Create/update snippets for app masks and "emboss" settings
-	- [ ] Do "emboss" versions of the illustration snippets?
+- [/] Create/update snippets for app masks and "emboss" settings
+	- [ ] Do "emboss" and "mask" versions of the illustration snippets?
+	- [ ] Add "emboss" note classes to the main SVG snippets
 	- [ ] I need to probably...maybe...take stock of the classes and everything that exists in the theme that should also exist as snippets
 
 - [ ] Add note to README: I've made the customizations I can available both as snippets and in Style Settings.
@@ -3683,6 +3681,9 @@ body .callout[data-callout*="default-bg"]
 }
 .whim-bg-askew-default {
 	background-position: 5px 5px;
+}
+.whim-bg-left {
+	background-position: left;
 }
 .whim-bg-right {
 	background-position: right;

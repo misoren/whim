@@ -3,13 +3,25 @@
 ![basic whim](screenshots/whim.png)
 > Vanilla Whim
 ---
-![basic whim](screenshots/whim5.png)
+![fancy whim](screenshots/whim5.png)
 > Whim dressed up
 ---
-![basic whim](screenshots/whim2.png)
-![basic whim](screenshots/whim3.png)
-![basic whim](screenshots/whim4.png)
+![cute whim](screenshots/whim7.png)
+> Whim with a cute note (snippets-or-Style Settings must be used for some of what's pictured for cuteness)
+---
+![powerful whim 1](screenshots/whim2.png)
+![powerful whim 2](screenshots/whim3.png)
+![powerful whim 3](screenshots/whim4.png)
 > Whim that has been training for 1000 years (in three accent color examples)
+---
+![space whim](screenshots/whim8.png)
+> Whim thinking about space (snippets-or-Style Settings must be used for some of what's pictured for cuteness)
+---
+![vintage whim]
+> TODO: Whim feeling old-fashioned
+---
+![pop whim]
+> TODO: Whim influenced by pop art
 ---
 
 # Overview
