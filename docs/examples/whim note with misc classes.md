@@ -9,4 +9,5 @@ cssclasses:
   - whim-narrow
   - whim-ui-secrets
   - whim-ui-no-active-line
+  - whim-ui-no-active-note-title-bright
 ---

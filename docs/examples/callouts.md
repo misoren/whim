@@ -81,6 +81,9 @@
 # New callout types
 #### Content callouts
 
+> [!spoiler] spoiler
+> Contents (text hidden until hover)
+
 > [!idea] idea
 > Contents
 

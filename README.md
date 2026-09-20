@@ -82,6 +82,7 @@
 - **New callout types**
 	- Many new "content" callout types (like "place", "chef", and "ugh")
 	- I'm probably not going to keep these images up-to-date if I add more, so check the docs for a full list! Or if the docs aren't updated, then...read the theme.css. :-)
+	- Not pictured here, there's a spoiler callout that is blacked-out until hover.
 ---
 ![default callouts](images/default_callouts.png)
 > The default callouts

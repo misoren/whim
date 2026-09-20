@@ -692,7 +692,7 @@ body {
 		85%
 	);
 
-	--h1-color: color-mix(in srgb, var(--con), var(--bcon) 00%);
+	--h1-color: color-mix(in srgb, var(--con), var(--bcon) 0%);
 	--h2-color: color-mix(in srgb, var(--con), var(--bcon) 50%);
 	--h3-color: color-mix(in srgb, var(--con), var(--bcon) 85%);
 	--h4-color: color-mix(in srgb, var(--bcon), var(--mw) 40%);
@@ -871,8 +871,14 @@ img:hover {
 	opacity: 1.0;
 }
 
-.cm-active.cm-line{
-  background-color: color-mix(in srgb, var(--bcon), transparent 85%);
+.cm-active.cm-line {
+	background-color: color-mix(in srgb, var(--bcon), transparent 95%);
+}
+.cm-focused .inline-title {
+	color: color-mix(in srgb, var(--con), white 50%);
+}
+.cm-focused .cm-active.cm-line {
+	background-color: color-mix(in srgb, var(--bcon), transparent 80%);
 }
 
 /*
@@ -1779,6 +1785,19 @@ body .callout[data-callout*="text-cut"] .callout-title {
 }
 body .callout[data-callout*="text-cut"]:hover {
 	border: none;
+}
+body .callout[data-callout*="spoiler"] {
+    --callout-icon: lucide-eye;
+	background-color: black;
+	background-image: none;
+	color: black;
+	--callout-color: black;
+}
+body .callout[data-callout*="spoiler"]:hover {
+	background-color: color-mix(in srgb, var(--callout-color), transparent 60%);
+	background-image: none;
+	color: var(--light-whim);
+	--callout-color: var(--whim-color);
 }
 body .callout[data-callout*="filter-invert"] {
 	filter: invert(1);
@@ -5251,7 +5270,11 @@ body.whim-anim-zoom .workspace,
 }
 body.whim-ui-no-active-line .cm-active.cm-line,
 .whim-ui-no-active-line .cm-active.cm-line {
-  background-color: transparent;
+	background-color: transparent;
+}
+body.whim-ui-no-active-note-title-bright .cm-focused .inline-title,
+.whim-ui-no-active-note-title-bright .cm-focused .inline-title {
+	color: var(--h1-color);
 }
 
 body.whim-ui-secrets .workspace,
@@ -6304,6 +6327,10 @@ settings:
         title: No Active Line Highlight
 		description: Removes the active line highlight.
         type: class-toggle
+	-
+		id: whim-ui-no-active-note-title-bright
+		title: No Brighter Title for Active Note
+		type: class-toggle
 	-
         id: whim-ui-more-dividers
         title: More Dividers
