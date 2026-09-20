@@ -12,6 +12,7 @@ body .callout[data-callout*="svg-artnouveau10"]  {
 	background-repeat: repeat;
 }
 
+.whim-emboss-artnouveau10,
 .whim-bg-stamp-artnouveau10 {
 	--stamp-svg: var(--gdj-artnouveau10);
 }
@@ -49,6 +50,15 @@ body .callout[data-callout*="svg-artnouveau10"]  {
 .whim-mask-artnouveau10-fademore {
 	-webkit-mask-image: var(--gdj-artnouveau10), linear-gradient(black 35%, transparent 65%);
 }
+.whim-emboss-artnouveau10,
 .whim-mask-artnouveau10-simple {
 	-webkit-mask-image: var(--gdj-artnouveau10), linear-gradient(color-mix(in srgb, black, transparent 25%) 25%, color-mix(in srgb, black, transparent 50%) 75%);
+}
+
+.whim-emboss-artnouveau10 {
+	background-image: var(--stamp-svg);
+	--nbg-solid-color: color-mix(in srgb, var(--whim-color), transparent 60%);
+	background-color: var(--nbg-solid-color);
+	background-position: 50% 50%;
+	-webkit-mask-position: calc(50% + 2px) calc(50% + 3px);
 }

@@ -1,0 +1,28 @@
+.workspace {
+	-webkit-mask-image: 
+		repeating-conic-gradient(
+			color-mix(in srgb, black, transparent 85%),
+			color-mix(in srgb, black, transparent 95%)
+		),
+		repeating-conic-gradient(
+			black 45deg,
+			transparent
+		),
+		repeating-conic-gradient(
+			transparent,
+			color-mix(in srgb, black, transparent 50%)
+		),
+		repeating-conic-gradient(
+			black 135deg,
+			transparent
+		),
+		repeating-conic-gradient(
+			color-mix(in srgb, black, transparent 50%),
+			transparent
+		),
+		repeating-conic-gradient(
+			transparent,
+			black 270deg
+		)
+	;
+}

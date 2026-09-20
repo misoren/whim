@@ -34,6 +34,7 @@ body .callout[data-callout*="svg-flower"]  {
 }
 
 
+.whim-emboss-flower,
 .whim-bg-stamp-flower {
 	--stamp-svg: var(--gdj-flower);
 }
@@ -50,6 +51,15 @@ body .callout[data-callout*="svg-flower"]  {
 .whim-mask-flower-fademore {
 	-webkit-mask-image: var(--gdj-flower), linear-gradient(black 35%, transparent 65%);
 }
+.whim-emboss-flower,
 .whim-mask-flower-simple {
 	-webkit-mask-image: var(--gdj-flower), linear-gradient(color-mix(in srgb, black, transparent 25%) 25%, color-mix(in srgb, black, transparent 50%) 75%);
+}
+
+.whim-emboss-flower {
+	background-image: var(--stamp-svg);
+	--nbg-solid-color: color-mix(in srgb, var(--whim-color), transparent 60%);
+	background-color: var(--nbg-solid-color);
+	background-position: 50% 50%;
+	-webkit-mask-position: calc(50% + 2px) calc(50% + 3px);
 }

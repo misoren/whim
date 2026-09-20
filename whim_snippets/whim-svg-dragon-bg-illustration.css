@@ -3,6 +3,8 @@ body {
     --background-secondary: var(--bg-color);
 }
 
-.theme-dark .workspace {
+.theme-light .workspace, .theme-dark .workspace {
+	background-position: 50% 50%;
+	background-size: auto;
 	background: var(--gdj-dragon);
 }

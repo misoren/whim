@@ -13,6 +13,7 @@
 ![cute whim](screenshots/whim7.png)
 > Whim with a cute note (snippets-or-Style Settings must be used for some of what's pictured for cuteness)
 ---
+---
 # Overview
 - **For people who love colors** 🌈
 	- Pick an accent color -> get a colorful theme with your chosen accent color as the primary color and a contrasting color for accents.
@@ -33,7 +34,7 @@
 	- There's a light mode, but YMMV with that fellow. It's far from fully tested, and some cssclasses, snippets, etc., will not play nice with light mode.
 - **Desktop first** 🖥️
 	- I use Obsidian mobile regularly, but this theme was not built for mobile use in particular, and mobile use hasn't been tested much yet. In my experience, this theme is *usable* on mobile, but many of its more fun features do not work properly.
-- **Large (~15mb last I checked)** 💪
+- **Large (~14mb last I checked)** 💪
 ---
 ![basic whim](screenshots/whim6.png)
 > Whim of two worlds: the future (simple scanline effect) and the past (combo embossing effect)
@@ -51,6 +52,7 @@
 ---
 ![pop whim](screenshots/whim10.png)
 > Whim influenced by pop art
+---
 ---
 # Features
 - **MANY CSS classes**
@@ -128,6 +130,7 @@
 ![blaaa](images/blaaa.png)
 > Whim's creation
 ---
+---
 # Themes I like that you might like
 I made Whim for my own use, but if I didn't, I'd be using one of these:
 - Fancy-a-story
@@ -139,6 +142,7 @@ I made Whim for my own use, but if I didn't, I'd be using one of these:
 
 The themes Minimal, Nebulux, and Fancy-a-story were useful points of reference/education/information. I took the checkbox styling approach from Minimal directly, which I think should be okay? :-)
 
+---
 # Improbable Future Stuff
 > or: what this theme does not do/do well atm
 - I may become convinced to make the scrollbars easier to see. Until then, there's a snippet available.

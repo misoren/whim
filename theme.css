@@ -444,6 +444,8 @@ body {
 
 	--tag-color: var(--bcon);
 
+	--secrets-color:  color-mix(in srgb, transparent, #181818 50%);
+
 	/* Used by snippets */
 	--bg-color: color-mix(in srgb, transparent, var(--nbg-solid-color) 20%);
 	--bg-more-color: color-mix(in srgb, transparent, var(--nbg-solid-color) 80%);
@@ -864,6 +866,9 @@ img:hover {
 	opacity: 1.0;
 }
 
+.cm-active.cm-line{
+  background-color: color-mix(in srgb, var(--bcon), transparent 85%);
+}
 
 /*
 ##############################################################
@@ -3456,7 +3461,6 @@ body.whim-emboss-abstract-app .workspace,
 /* core note cssclass for "stamp" BGs */
 .whim-bg-diy-stamp {
 	background-image: var(--stamp-svg);
-	background-position: 50% -2%;
 }
 
 body.whim-bg-image-stars1-app .horizontal-main-container,
@@ -3743,6 +3747,7 @@ body.whim-bg-net .workspace,
 
 /* Masks */
 
+body.whim-mask-tape-app .workspace,
 .whim-mask-tape {
 	-webkit-mask-image: linear-gradient(to bottom, 
 		transparent 0%,
@@ -3751,12 +3756,14 @@ body.whim-bg-net .workspace,
 		transparent 100%
 	);
 }
+body.whim-mask-vignette-app .workspace,
 .whim-mask-vignette {
 	-webkit-mask-image: radial-gradient(
 		black 55%, 
 		transparent 100%
 	);
 }
+body.whim-mask-clockwork-app .workspace,
 .whim-mask-clockwork {
 	-webkit-mask-image: 
 		repeating-conic-gradient(
@@ -3785,6 +3792,7 @@ body.whim-bg-net .workspace,
 		)
 	;
 }
+body.whim-mask-shatter-app .workspace,
 .whim-mask-shatter {
 	-webkit-mask-image: 
 		radial-gradient(
@@ -3800,6 +3808,7 @@ body.whim-mask-scanlines-app .workspace,
 .whim-mask-scanlines {
 	-webkit-mask-image: var(--nmask-whim-scanlines);
 }
+body.whim-mask-cicles-app .workspace,
 .whim-mask-circles { 
 	-webkit-mask-image: 
 		repeating-radial-gradient(
@@ -4288,6 +4297,10 @@ body .callout[data-callout*="emboss-abstract"],
 .whim-mask-bottom {
 	-webkit-mask-position: bottom;
 }
+body.whim-mask-comfy-app .workspace, 
+.whim-mask-comfy {
+	-webkit-mask-position: calc(50% + 2px) calc(10% + 3px);
+}
 .whim-mask-no-repeat .workspace,
 .whim-mask-no-repeat {
 	-webkit-mask-repeat: no-repeat;
@@ -4350,6 +4363,10 @@ body .callout[data-callout*="big-mask"],
 body.whim-mask-bigger .workspace,
 .whim-mask-bigger {
 	-webkit-mask-size: 300%;
+}
+body.whim-mask-size-reset .workspace,
+.whim-mask-size-reset {
+	-webkit-mask-size: 100%;
 }
 
 /* Mask animations */
@@ -5227,7 +5244,51 @@ body.whim-anim-zoom .workspace,
 .whim-narrow {
 	max-width: 800px;
 }
+body.whim-ui-no-active-line .cm-active.cm-line,
+.whim-ui-no-active-line .cm-active.cm-line {
+  background-color: transparent;
+}
 
+body.whim-ui-secrets .workspace,
+.whim-ui-secrets {
+	background-color: black;
+}
+body.whim-ui-secrets:not(cm-active),
+.whim-ui-secrets:not(cm-active) {
+	color: var(--secrets-color);
+	--text-normal: var(--secrets-color);
+	--emphasis-text: var(--secrets-color);
+	--strong-text: var(--secrets-color);
+	--strike-text: var(--secrets-color); 
+	--h1-color: var(--secrets-color); 
+	--h2-color: var(--secrets-color); 
+	--h3-color: var(--secrets-color); 
+	--h4-color: var(--secrets-color); 
+	--h5-color: var(--secrets-color); 
+	--h6-color: var(--secrets-color); 
+	--link-color: var(--secrets-color); 
+	--link-external-color: var(--secrets-color); 
+	--text-highlight-bg: black;
+}
+body.whim-ui-secrets .cm-active,
+.whim-ui-secrets .cm-active {
+	--emphasis-text: hsl(
+		calc(var(--accent-h) - var(--shift-hue)),
+		var(--styled-text-sat),
+		var(--styled-text-lum)
+	);
+	--strong-text: hsl(
+		calc(var(--accent-h) + var(--shift-hue)),
+		var(--styled-text-sat),
+		var(--styled-text-lum)
+	);
+	--strike-text: hsl(
+		calc(var(--accent-h) + var(--strongest-shift-hue)),
+		var(--styled-text-sat),
+		var(--styled-text-lum)
+	);
+	color: var(--light-whim);
+}
 
 /* Headers, header fonts */
 
@@ -5635,6 +5696,10 @@ body.whim-body-bg-color-override .workspace {
     --background-primary: var(--bg-color);
     --background-secondary: var(--bg-color);
 }
+body.whim-body-bg-color-more-override .workspace {
+    --background-primary: var(--bg-more-color);
+    --background-secondary: var(--bg-more-color);
+}
 
 body.whim-bg-filter-blur .workspace {
     backdrop-filter: brightness(0.8) blur(4px);
@@ -5752,7 +5817,7 @@ settings:
     - 
         id: whim-filter-setting
         title: Filter
-        description: Slap a filter over the whole thing. (For the Terminal filter, the snippet version adds scanlines.)
+        description: Slap a filter over the whole thing.
         type: class-select
         allowEmpty: false
         default: default
@@ -6180,15 +6245,31 @@ settings:
         type: heading
         level: 2
         collapsed: true
-	-
-        id: whim-body-bg-color-override
-        title: BG Color Override
-		description: Can make BG color subtly more consistent/thematic.
-        type: class-toggle
+    - 
+        id: whim-bg-color-setting
+        title: More BG Color
+        type: class-select
+        allowEmpty: false
+        default: default
+        options:
+            - 
+                label: Default
+                value: default
+            - 
+                label: More
+                value: whim-body-bg-color-override
+            - 
+                label: Even More
+                value: whim-body-bg-color-more-override
 	-
         id: whim-ui-dude-wheres-my-scrollbar
         title: Where's my scrollbar?
 		description: For people who like their scrollbars to be visible.
+        type: class-toggle
+	-
+        id: whim-ui-no-active-line
+        title: No Active Line Highlight
+		description: Removes the active line highlight.
         type: class-toggle
 	-
         id: whim-ui-more-dividers
@@ -6228,6 +6309,11 @@ settings:
         title: Full Opacity Images
 		description: Applies the unwhim-images cssclass to the whole app.
         type: class-toggle
+	-
+        id: whim-ui-secrets
+        title: Secrets Mode
+		description: Applies the ui-secrets cssclass to the whole app.
+        type: class-toggle
     - 
         id: whim-masks-section-title
         title: Masks
@@ -6246,8 +6332,23 @@ settings:
                 label: Default
                 value: default
             - 
+                label: tape
+                value: whim-mask-tape-app
+            - 
+                label: vignette
+                value: whim-mask-vignette-app
+            - 
+                label: clockwork
+                value: whim-mask-clockwork-app
+            - 
+                label: shatter
+                value: whim-mask-shatter-app
+            - 
                 label: scanlines
                 value: whim-mask-scanlines-app
+            - 
+                label: circles
+                value: whim-mask-circles-app
             - 
                 label: woman1
                 value: whim-mask-woman1-app
@@ -6376,6 +6477,9 @@ settings:
                 label: Center
                 value: whim-mask-center-app
             - 
+                label: Comfy
+                value: whim-mask-comfy-app
+            - 
                 label: Askew Center
                 value: whim-mask-askew-center
     - 
@@ -6388,6 +6492,9 @@ settings:
             - 
                 label: Default
                 value: default
+            - 
+                label: Size Reset
+                value: whim-mask-size-reset
             - 
                 label: Bit Bigger
                 value: whim-mask-bit-bigger

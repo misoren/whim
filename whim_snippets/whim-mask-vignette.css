@@ -1,0 +1,6 @@
+.workspace {
+	-webkit-mask-image: radial-gradient(
+		black 55%, 
+		transparent 100%
+	);
+}

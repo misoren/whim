@@ -1,0 +1,8 @@
+.workspace {
+	-webkit-mask-image: 
+		repeating-radial-gradient(
+			circle,
+			color-mix(in srgb, white, transparent 30%) 0 3px,
+			color-mix(in srgb, white, transparent 5%) 3px 50px
+		);
+}

@@ -1,0 +1,9 @@
+body {
+    --background-primary: var(--bg-more-color);
+    --background-secondary: var(--bg-more-color);
+}
+
+.workspace {
+	-webkit-mask-image: var(--gdj-artnouveau4), linear-gradient(color-mix(in srgb, black, transparent 25%) 25%, color-mix(in srgb, black, transparent 50%) 75%);
+	-webkit-mask-position: 2px 3px;
+}

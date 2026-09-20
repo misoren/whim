@@ -1,8 +1,12 @@
-`whim-color-` and `whim-draw-` color and opacity classes can be used in combination with a number of `whim-bg-` classes to recolor the background elements. 
+`whim-color-` and `whim-draw-` color and opacity classes can be used in combination with a number of `whim-bg-` classes to recolor the background elements. For the modifying classes (e.g., `whim-color-more` increases color opacity), a `whim-color-` color class must be set on the note (e.g., `whim-color-red` or `whim-color-whim`). Generally, classes ending with `-whim` will apply the chosen accent color to whatever element is specified.
 
 `whim-bg-diy-stamp` must be set for any `whim-bg-stamp-` classes to apply, unless a `whim-emboss-` class has been set.
 
 `whim-bg-image-` classes will cover up most other `whim-bg-` effects. `whim-bg-filter-miximagestamp` can be used to somewhat blend an image background with other background effects.
+
+---
+
+Each `whim-emboss-` class/setting is a combination of an illustration background and mask.
 
 ---
 

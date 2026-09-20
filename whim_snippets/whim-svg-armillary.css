@@ -33,6 +33,7 @@ body .callout[data-callout*="svg-armillary"]  {
 	--hr-svg: var(--gdj-armillary);
 }
 
+.whim-emboss-armillary,
 .whim-bg-stamp-armillary {
 	--stamp-svg: var(--gdj-armillary);
 }
@@ -49,6 +50,15 @@ body .callout[data-callout*="svg-armillary"]  {
 .whim-mask-armillary-fademore {
 	-webkit-mask-image: var(--gdj-armillary), linear-gradient(black 35%, transparent 65%);
 }
+.whim-emboss-armillary,
 .whim-mask-armillary-simple {
 	-webkit-mask-image: var(--gdj-armillary), linear-gradient(color-mix(in srgb, black, transparent 25%) 25%, color-mix(in srgb, black, transparent 50%) 75%);
+}
+
+.whim-emboss-armillary {
+	background-image: var(--stamp-svg);
+	--nbg-solid-color: color-mix(in srgb, var(--whim-color), transparent 60%);
+	background-color: var(--nbg-solid-color);
+	background-position: 50% 50%;
+	-webkit-mask-position: calc(50% + 2px) calc(50% + 3px);
 }

@@ -33,6 +33,7 @@ body .callout[data-callout*="svg-dragon"]  {
 	--hr-svg: var(--gdj-dragon);
 }
 
+.whim-emboss-dragon,
 .whim-bg-stamp-dragon {
 	--stamp-svg: var(--gdj-dragon);
 }
@@ -49,6 +50,15 @@ body .callout[data-callout*="svg-dragon"]  {
 .whim-mask-dragon-fademore {
 	-webkit-mask-image: var(--gdj-dragon), linear-gradient(black 35%, transparent 65%);
 }
+.whim-emboss-dragon,
 .whim-mask-dragon-simple {
 	-webkit-mask-image: var(--gdj-dragon), linear-gradient(color-mix(in srgb, black, transparent 25%) 25%, color-mix(in srgb, black, transparent 50%) 75%);
+}
+
+.whim-emboss-dragon {
+	background-image: var(--stamp-svg);
+	--nbg-solid-color: color-mix(in srgb, var(--whim-color), transparent 60%);
+	background-color: var(--nbg-solid-color);
+	background-position: 50% 50%;
+	-webkit-mask-position: calc(50% + 2px) calc(50% + 3px);
 }
