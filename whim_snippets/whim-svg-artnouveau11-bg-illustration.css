@@ -1,10 +1,14 @@
-body {
-    --background-primary: var(--bg-color);
-    --background-secondary: var(--bg-color);
-}
-
 .theme-light .workspace, .theme-dark .workspace {
+
+	--ribbon-background: var(--bg-more-color);
+	--ribbon-background-collapsed: var(--bg-more-color);
 	background-position: 50% 50%;
 	background-size: auto;
 	background: var(--gdj-artnouveau11);
+}
+
+
+.workspace-leaf-content,
+.workspace-tab-header-container {
+	background-color: var(--bg-more-color);
 }

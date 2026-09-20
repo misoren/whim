@@ -10,8 +10,8 @@
 ##############################################################
 ##############################################################
 */
-
 body {
+
     /*
     ##############################################################
     ##############################################################
@@ -446,7 +446,7 @@ body {
 
 	--secrets-color:  color-mix(in srgb, transparent, #181818 50%);
 
-	/* Used by snippets */
+	/* Used by snippets and settings */
 	--bg-color: color-mix(in srgb, transparent, var(--nbg-solid-color) 20%);
 	--bg-more-color: color-mix(in srgb, transparent, var(--nbg-solid-color) 80%);
 }
@@ -534,7 +534,7 @@ body {
 	--scan-color1: color-mix(in srgb, black, transparent 70%);
 	--scan-color2: color-mix(in srgb, black, transparent 90%);
 	--mask-color1: white;
-	--mask-color2:  color-mix(in srgb, black, transparent 50%);
+	--mask-color2:  color-mix(in srgb, black, transparent 40%);
 
 	--link-color: var(--lw);
 	--link-external-color: var(--lw);
@@ -558,7 +558,8 @@ body {
 	--callout-title-size: 1.15em;
 	--callout-icon-size: 25px;
 
-	--ribbon-background: var(--bgw3);
+	--ribbon-background: transparent;
+	--ribbon-background-collapsed: transparent;
 
 	--code-background: color-mix(in srgb, var(--whim-color), transparent 80%);
 	
@@ -677,8 +678,8 @@ body {
 	
 	--scan-color1: color-mix(in srgb, white, transparent 50%);
 	--scan-color2: color-mix(in srgb, white, transparent 70%);
-	--mask-color1: white;
-	--mask-color2:  color-mix(in srgb, white, transparent 30%);
+	--mask-color1:  white;
+	--mask-color2: color-mix(in srgb, white, transparent 30%);
 
 	--link-color: var(--lw);
 	--link-external-color: var(--lw);
@@ -703,7 +704,8 @@ body {
 	--callout-title-size: 1.15em;
 	--callout-icon-size: 25px;
 
-	--ribbon-background: var(--bgw3);
+	--ribbon-background: transparent;
+	--ribbon-background-collapsed: transparent;
 
 	--code-background: color-mix(in srgb, var(--mw), transparent 70%);
 	
@@ -773,6 +775,11 @@ body {
     background-color: var(--background-primary);
 }
 
+.workspace-leaf-content,
+.workspace-tab-header-container {
+	background-color: transparent;
+}
+
 body {
     --background-primary: transparent;
     --background-secondary: transparent;
@@ -785,11 +792,9 @@ body {
 }
 
 /* .view-header {
-    backdrop-filter: brightness(0.85) blur(2px);
 	border-style: solid;
 	border-color: color-mix(in srgb, var(--dw), transparent 0%);
-	border-width: 0px 0px 1px 0px;
-	border-radius: 10px 10px 50px 50px;
+	border-width: 0px 1px 1px 1px;
 } */
 
 .prompt, .mobile-tab-switcher, .graph-controls, .bases-cards-item, .bases-header, .status-bar {
@@ -3808,7 +3813,7 @@ body.whim-mask-scanlines-app .workspace,
 .whim-mask-scanlines {
 	-webkit-mask-image: var(--nmask-whim-scanlines);
 }
-body.whim-mask-cicles-app .workspace,
+body.whim-mask-circles-app .workspace,
 .whim-mask-circles { 
 	-webkit-mask-image: 
 		repeating-radial-gradient(
@@ -5257,6 +5262,9 @@ body.whim-ui-secrets:not(cm-active),
 .whim-ui-secrets:not(cm-active) {
 	color: var(--secrets-color);
 	--text-normal: var(--secrets-color);
+	--code-normal: var(--secrets-color);
+	--tag-color: var(--secrets-color);
+	--checklist-done-color: var(--secrets-color);
 	--emphasis-text: var(--secrets-color);
 	--strong-text: var(--secrets-color);
 	--strike-text: var(--secrets-color); 
@@ -5269,6 +5277,15 @@ body.whim-ui-secrets:not(cm-active),
 	--link-color: var(--secrets-color); 
 	--link-external-color: var(--secrets-color); 
 	--text-highlight-bg: black;
+}
+.whim-ui-secrets .callout {
+	background-color: black;
+	color: var(--secrets-color);
+	border-color: var(--secrets-color);
+}
+.whim-ui-secrets .callout-title-inner {
+	color: var(--secrets-color);
+	border-color: var(--secrets-color);
 }
 body.whim-ui-secrets .cm-active,
 .whim-ui-secrets .cm-active {
@@ -5288,6 +5305,10 @@ body.whim-ui-secrets .cm-active,
 		var(--styled-text-lum)
 	);
 	color: var(--light-whim);
+	--text-normal: var(--light-whim);
+	--code-normal: var(--light-whim);
+	--tag-color: var(--bcon);
+	--checklist-done-color: var(--light-whim);
 }
 
 /* Headers, header fonts */
@@ -5670,36 +5691,48 @@ body.whim-hue-shift-less, .theme-dark.whim-hue-shift-less, .theme-light.whim-hue
 
 /* These don't have a snippet, because the snippets that might use it do something like it automatically. */
 
-body.whim-emboss-abstract-app,
-body.whim-emboss-compass-app,
-body.whim-emboss-hand-app,
-body.whim-emboss-flowers-app,
-body.whim-emboss-crying-app,
-body.whim-emboss-dots-app,
-body.whim-emboss-halftone-app,
-body.whim-emboss-artnouveau12-app,
-body.whim-emboss-castle-app,
-body.whim-emboss-space-app,
-body.whim-emboss-corner-app,
-body.whim-emboss-border-app,
-body.whim-emboss-seamless2-app,
-body.whim-emboss-seamless1-app,
-body.whim-emboss-perspective-app,
-body.whim-emboss-heron-app,
-body.whim-emboss-woman3-app,
-body.whim-emboss-artnouveau2-app,
-body.whim-emboss-woman1-app {
-    --background-primary: var(--bg-more-color);
-    --background-secondary: var(--bg-more-color);
+body.whim-emboss-abstract-app .workspace,
+body.whim-emboss-compass-app .workspace,
+body.whim-emboss-hand-app .workspace,
+body.whim-emboss-flowers-app .workspace,
+body.whim-emboss-crying-app .workspace,
+body.whim-emboss-dots-app .workspace,
+body.whim-emboss-halftone-app .workspace,
+body.whim-emboss-artnouveau12-app .workspace,
+body.whim-emboss-castle-app .workspace,
+body.whim-emboss-space-app .workspace,
+body.whim-emboss-corner-app .workspace,
+body.whim-emboss-border-app .workspace,
+body.whim-emboss-seamless2-app .workspace,
+body.whim-emboss-seamless1-app .workspace,
+body.whim-emboss-perspective-app .workspace,
+body.whim-emboss-heron-app .workspace,
+body.whim-emboss-woman3-app .workspace,
+body.whim-emboss-artnouveau2-app .workspace,
+body.whim-emboss-woman1-app .workspace {
+	--ribbon-background: var(--bg-color);
+	--ribbon-background-collapsed: var(--bg-color);
+	background-color: var(--bg-more-color);
 }
+
 body.whim-body-bg-color-override .workspace {
-    --background-primary: var(--bg-color);
-    --background-secondary: var(--bg-color);
+	--ribbon-background: var(--bg-color);
+	--ribbon-background-collapsed: var(--bg-color);
 }
+body.whim-body-bg-color-override .workspace-leaf-content,
+body.whim-body-bg-color-override .workspace-tab-header-container {
+	background-color: var(--bg-color);
+}
+
 body.whim-body-bg-color-more-override .workspace {
-    --background-primary: var(--bg-more-color);
-    --background-secondary: var(--bg-more-color);
+	--ribbon-background: var(--bg-more-color);
+	--ribbon-background-collapsed: var(--bg-more-color);
 }
+body.whim-body-bg-color-more-override .workspace-leaf-content,
+body.whim-body-bg-color-more-override .workspace-tab-header-container {
+	background-color: var(--bg-more-color);
+}
+
 
 body.whim-bg-filter-blur .workspace {
     backdrop-filter: brightness(0.8) blur(4px);
@@ -6312,7 +6345,7 @@ settings:
 	-
         id: whim-ui-secrets
         title: Secrets Mode
-		description: Applies the ui-secrets cssclass to the whole app.
+		description: Applies the ui-secrets cssclass to the whole app, to mixed results.
         type: class-toggle
     - 
         id: whim-masks-section-title

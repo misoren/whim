@@ -1,9 +1,13 @@
-body {
-    --background-primary: var(--bg-more-color);
-    --background-secondary: var(--bg-more-color);
-}
-
 .workspace {
+
+	--ribbon-background: var(--bg-more-color);
+	--ribbon-background-collapsed: var(--bg-more-color);
 	-webkit-mask-image: var(--gdj-compass), linear-gradient(color-mix(in srgb, black, transparent 25%) 25%, color-mix(in srgb, black, transparent 50%) 75%);
 	-webkit-mask-position: 2px 3px;
+}
+
+
+.workspace-leaf-content,
+.workspace-tab-header-container {
+	background-color: var(--bg-more-color);
 }

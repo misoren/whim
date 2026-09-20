@@ -6,12 +6,17 @@
 ---
 ![basic whim](screenshots/whim.png)
 > Vanilla Whim
+
+> (NOTE: Many other screenshots of Whim include a solid color background for the top tab bar and the ribbon, which has since been removed; both are now transparent, revealing the app background, as shown here.)
 ---
 ![fancy whim](screenshots/whim5.png)
 > Whim dressed up
 ---
 ![cute whim](screenshots/whim7.png)
 > Whim with a cute note (snippets-or-Style Settings must be used for some of what's pictured for cuteness)
+---
+![matrix whim](screenshots/whim11.png)
+> The Whim has you (snippets-or-Style Settings must be used for much of what's pictured for terminal-like effect) 
 ---
 ---
 # Overview
@@ -51,7 +56,7 @@
 > Whim feeling old-fashioned, or perhaps in half-mourning
 ---
 ![pop whim](screenshots/whim10.png)
-> Whim influenced by pop art
+> Whim influenced by pop art (snippets-or-Style Settings in use)
 ---
 ---
 # Features
@@ -124,6 +129,9 @@
 	- Bold, italics, strikethrough, and highlight are colorful
         - ...at least in the main note body, in edit mode...other contexts' may not be yet.
 	- Different heading colors using the dynamic palette
+	- A note cssclass, an app-wide setting in Style Settings, and an app-wide snippet provide a "secrets" mode for hiding what you've written from yourself, outside of the active line. Useful for hiding from the internal censor when drafting fiction, brainstorming, or journaling.
+		- The snippet version looks different from the Style Settings version. Sorry about that. I may attempt to fix it someday; both are basically functional, I think, but the snippet version is a little better.
+	- Active line highlighting, which can be disabled via snippet, Style Settings, and note cssclass
 - **No AI involvement**
 	- I crafted this CSS the old-fashioned way: writing and rewriting my own amateur CSS, with frequent lookin' up of stuff on the internet. As far as I know, none of the images and SVGs included in the theme proper or in the snippets folder were created with or modified by AI.
 ---

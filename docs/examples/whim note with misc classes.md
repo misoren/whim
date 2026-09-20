@@ -7,4 +7,6 @@ cssclasses:
   - whim-ui-smaller-checkboxes
   - whim-unwhim-images
   - whim-narrow
+  - whim-ui-secrets
+  - whim-ui-no-active-line
 ---
