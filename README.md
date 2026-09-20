@@ -105,7 +105,7 @@
 ---
 - **Style Settings = snippets**
 	- As a personal user, I love Style Settings. But this theme was also made with plugins-off users in mind, e.g., me at work. I've endeavored to make nearly everything you can do in Style Settings with this theme available via snippets as well.
-		- An exception to this currently is the mask/"emboss" setting in Style Settings.
+		- An exception to this currently is the mask/"emboss" setting in Style Settings. You can recreate this by combining bg-illustration snippets with their corresponding mask snippet.
 - *OPTIONAL*: **Several snippets available for this theme**
 	- Many won't work with other themes, but some might!
     - Includes whole-app background alternatives and animations, including some backgrounds that layer (e.g., image and pattern backgrounds generally layer with each other, with the pattern overlaying the image)
@@ -114,7 +114,7 @@
 	- [callouts](docs/examples/callouts.md)
 	- [checkboxes](docs/examples/checkboxes.md)
 	- [snippets](docs/snippets.md)
-	- There's markdown files formatted for Obsidian cssclasses lists titled "whim note with every...". If you drop these files in your vault, then the whim options can be autosuggested in the cssclasses property field.
+	- There's markdown files formatted for Obsidian cssclasses lists titled something like "whim note with every...". If you drop these files in your vault, then the whim options can be auto-suggested in the cssclasses property field.
 ---
 ![new tab](screenshots/new_tab.png)
 > New tab
