@@ -1,0 +1,5 @@
+
+.markdown-source-view .cm-focused {
+	background-color: color-mix(in srgb, var(--whim-color), transparent 95%);
+	box-shadow: inset 0px 0px 4px 4px color-mix(in srgb, var(--whim-color), transparent 95%);
+}

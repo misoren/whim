@@ -147,6 +147,8 @@
 	- A note cssclass, an app-wide setting in Style Settings, and an app-wide snippet provide a "secrets" mode for hiding what you've written from yourself, outside of the active line. Useful for hiding from the internal censor when drafting fiction, brainstorming, or journaling.
 		- The snippet version looks different from the Style Settings version. Sorry about that. I may attempt to fix it someday; both are basically functional, I think, but the snippet version is a little better.
 	- Active line highlighting, which can be disabled via snippet, Style Settings, and note cssclass
+	- Optional active note highlighting via snippet or Style Settings
+	- The active note's header is brighter and glowy. Both of these can be disabled independently via snippet, Style Settings, and note cssclass.
 - **No AI involvement**
 	- I crafted this CSS the old-fashioned way: writing and rewriting my own amateur CSS, with frequent lookin' up of stuff on the internet. As far as I know, none of the images and SVGs included in the theme proper or in the snippets folder were created with or modified by AI.
 ---
