@@ -39,7 +39,13 @@
 	- There's a light mode, but YMMV with that fellow. It's far from fully tested, and some cssclasses, snippets, etc., will not play nice with light mode.
 - **Desktop first** 🖥️
 	- I use Obsidian mobile regularly, but this theme was not built for mobile use in particular, and mobile use hasn't been tested much yet. In my experience, this theme is *usable* on mobile, but many of its more fun features do not work properly.
-- **Large (~14mb last I checked)** 💪
+- **Large...** 💪
+	- Some illustrations that were included in theme in my initial version have been removed to try to get the theme under Obsidian's maximum size limit for community submission. While the note cssclasses, settings, etc., remain in the theme, the actual SVG data has been moved to snippets which must be downloaded and turned on before those will take effect. Illustrations affected so far:
+		- artnouveau2
+		- artnouveau12
+		- flowers
+		- halftone
+	- It is a to-do item of mine to provide additional documentation on the illustrations offered via snippet and to add a separate setting/set of settings to the Style Settings for this theme for interacting with the illustrations whose sources are snippet-only. This could result in a significant restructuring of the theme, but it should have little impact on the user. :-)
 ---
 ![basic whim](screenshots/whim6.png)
 > Whim of two worlds: the future (simple scanline effect) and the past (combo embossing effect)
@@ -53,7 +59,7 @@
 > Whim that has been training for 1000 years (in three accent color examples)
 ---
 ![vintage whim](screenshots/whim9.png)
-> Whim feeling old-fashioned, or perhaps in half-mourning
+> Whim feeling old-fashioned, or perhaps in half-mourning (snippet required for this note background)
 ---
 ![pop whim](screenshots/whim10.png)
 > Whim influenced by pop art (snippets-or-Style Settings in use)
