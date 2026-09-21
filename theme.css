@@ -5268,7 +5268,12 @@ body.whim-ui-no-active-note-title-glow .cm-focused .inline-title,
 body.whim-ui-active-note .markdown-source-view .cm-focused {
 	background-color: color-mix(in srgb, var(--whim-color), transparent 95%);
 	box-shadow: inset 0px 0px 4px 4px color-mix(in srgb, var(--whim-color), transparent 95%);
-    backdrop-filter: brightness(0.95) blur(3.5px);
+    backdrop-filter: brightness(0.95) blur(2.5px);
+	border: inherit;
+	border-radius: inherit;
+	border-width: none;
+	border-color: none;
+	border-style: none;
 }
 
 body.whim-ui-secrets .workspace,
