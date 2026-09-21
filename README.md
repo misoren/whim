@@ -118,6 +118,8 @@
 - **Style Settings = snippets**
 	- As a personal user, I love Style Settings. But this theme was also made with plugins-off users in mind, e.g., me at work. I've endeavored to make nearly everything you can do in Style Settings with this theme available via snippets as well.
 		- An exception to this currently is the mask/"emboss" setting in Style Settings. You can recreate this by combining bg-illustration snippets with their corresponding mask snippet.
+- **Animations**
+	- App and note background elements can be animated in a few ways presently, though the animations may not be able to be combined with other effects, and they may not be very *comfy* for certain configurations...
 - *OPTIONAL*: **Several snippets available for this theme**
 	- Many won't work with other themes, but some might!
     - Includes whole-app background alternatives and animations, including some backgrounds that layer (e.g., image and pattern backgrounds generally layer with each other, with the pattern overlaying the image)

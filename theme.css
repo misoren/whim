@@ -6008,14 +6008,14 @@ settings:
         default: default
         options:
             - 
-                label: Default
+                label: Default (None)
                 value: default
-            - 
-                label: Basic
-                value: whim-bg-layer1-animate-basic
             - 
                 label: Faster
                 value: whim-bg-layer1-animate-faster
+            - 
+                label: Basic
+                value: whim-bg-layer1-animate-basic
             - 
                 label: Slower
                 value: whim-bg-layer1-animate-slower
@@ -6266,7 +6266,7 @@ settings:
         default: default
         options:
             - 
-                label: Default
+                label: Default (None)
                 value: default
             - 
                 label: Shift
