@@ -43,8 +43,14 @@
 	- Some illustrations that were included in theme in my initial version have been removed to try to get the theme under Obsidian's maximum size limit for community submission. While the note cssclasses, settings, etc., remain in the theme, the actual SVG data has been moved to snippets which must be downloaded and turned on before those will take effect. Illustrations affected so far:
 		- artnouveau2
 		- artnouveau12
+		- castle
+		- compass
+		- corner
+		- dots
 		- flowers
 		- halftone
+		- hand
+		- woman1
 	- It is a to-do item of mine to provide additional documentation on the illustrations offered via snippet and to add a separate setting/set of settings to the Style Settings for this theme for interacting with the illustrations whose sources are snippet-only. This could result in a significant restructuring of the theme, but it should have little impact on the user. :-)
 ---
 ![basic whim](screenshots/whim6.png)
