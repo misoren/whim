@@ -1,0 +1,3 @@
+.theme-light .workspace, .theme-dark .workspace {
+	--checkbox-size: 20px;
+}
